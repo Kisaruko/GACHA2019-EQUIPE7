@@ -283,13 +283,6 @@ MonoBehaviour:
   canRotateObject: 0
   speedRotateObj: 1
   distMaxDrop: 3
-  axes: 0
-  sensitivityX: 2
-  sensitivityY: 2
-  minimumX: -360
-  maximumX: 360
-  minimumY: -60
-  maximumY: 60
 --- !u!1 &1244942546
 GameObject:
   m_ObjectHideFlags: 0
@@ -444,7 +437,7 @@ GameObject:
   - component: {fileID: 1517152739}
   m_Layer: 0
   m_Name: Door
-  m_TagString: Untagged
+  m_TagString: Interact
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
