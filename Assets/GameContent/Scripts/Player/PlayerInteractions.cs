@@ -64,6 +64,10 @@ public class PlayerInteractions : MonoBehaviour
                 hit.rigidbody.useGravity = false;
                 Camera.main.transform.GetChild(0).gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
             }
+            if (Input.GetMouseButtonDown(0) && hit.transform.gameObject.CompareTag("Interact"))
+            {
+                hit.transform.GetComponent<Trigger>().ActiveInteract();
+            }
         }
         else
         {

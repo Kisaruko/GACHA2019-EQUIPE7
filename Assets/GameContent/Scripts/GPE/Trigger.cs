@@ -5,46 +5,61 @@ using UnityEngine.Events;
 
 public class Trigger : MonoBehaviour
 {
-    public ObjectType interactType = ObjectType.Player;
+    #region Fields / Properties
+    public bool doDesactiveAfterEnable = true;
+    public string interactID = string.Empty;
     public UnityEvent interactEvent = new UnityEvent();
     public GameObject prefab = null;
     public Transform prefabPosition = null;
     public string prefabText = string.Empty;
+    public bool doMoveObjectOnTrigger = false;
+    public Transform toMoveObjectTransform = null;
+    #endregion
 
-    // Start is called before the first frame update
-    void Start()
+    #region Methods
+
+    #region Original Methods
+    // Activate an interactable
+    public void ActiveInteract()
     {
-        
-    }
+        if (prefab && prefabPosition)
+        {
+            GameObject _prefab = Instantiate(prefab, prefabPosition.position, prefab.transform.rotation);
+            TextMesh _text = _prefab.GetComponent<TextMesh>();
+            if (_text) _text.text = prefabText;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+            Destroy(_prefab, (prefabText.Length / 2));
+        }
+        interactEvent.Invoke();
 
+        if (doDesactiveAfterEnable) Destroy(this);
+    }
+    #endregion
+
+    #region Unity Methods
     private void OnTriggerEnter(Collider other)
     {
         Interact _interact = other.GetComponent<Interact>();
-        if (_interact)
+        if (_interact && (interactID == _interact.interactID))
         {
-            if (prefab && prefabPosition)
+            // Move object if needed
+            if (doMoveObjectOnTrigger && toMoveObjectTransform)
             {
-                GameObject _prefab = Instantiate(prefab, prefabPosition.position, Quaternion.identity);
-                TextMesh _text = _prefab.GetComponent<TextMesh>();
-                if (_text) _text.text = prefabText;
-
-                Destroy(_prefab, (prefabText.Length / 2));
+                other.transform.SetParent(null);
+                other.transform.position = toMoveObjectTransform.position;
+                other.transform.rotation = toMoveObjectTransform.rotation;
             }
-           if(interactType== _interact.type) interactEvent.Invoke();
+
+            ActiveInteract();
         }
     }
-}
 
-public enum ObjectType
-{
-    Key,
-    Card,
-    Player
-}
+    /*private void Start()
+    {
+        Collider _collider = GetComponent<Collider>();
+        if (!_collider.isTrigger) gameObject.tag = "Interact";
+    }*/
+    #endregion
 
+    #endregion
+}
