@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.SceneManagement;
-using TMPro;
 
 public class UIManager : MonoBehaviour
 {
@@ -56,6 +53,14 @@ public class UIManager : MonoBehaviour
         pauseAnchor.SetActive(_doPause);
 
         OnPause?.Invoke(_doPause);
+    }
+
+    public void SetMatriochka(bool _isValid)
+    {
+        if (!AllManager.Instance) return;
+
+        int _index = SceneManager.GetActiveScene().buildIndex - 1;
+        if (_index < AllManager.Instance.Matriochka.Length) AllManager.Instance.Matriochka[_index] = _isValid;
     }
 
     private void Awake()

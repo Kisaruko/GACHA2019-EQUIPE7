@@ -54,7 +54,7 @@ public class ClockTimer : MonoBehaviour
         for (int i = _duration; i >= 0; i--)
         {
             SetHandRoll(i);
-            yield return new WaitForSecondsRealtime(_tickDuration);
+            yield return new WaitForSeconds(_tickDuration);
         }
 
         EndTimer();

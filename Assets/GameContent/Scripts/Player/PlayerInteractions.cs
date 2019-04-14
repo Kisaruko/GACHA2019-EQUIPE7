@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerInteractions : MonoBehaviour
 {
+    public PlayerController_LG _controller;
     private GameObject lastObjectSee;
     public float timerHighlight = 0;
     public float maxtimer = 0.75f;
@@ -14,8 +15,8 @@ public class PlayerInteractions : MonoBehaviour
         set
         {
             canRotateObject = value;
-            GetComponent<PlayerController_LG>().canLook = !value;
-            GetComponent<PlayerController_LG>().canMove = !value;
+            _controller.canLook = !value;
+            _controller.canMove = !value;
 
             Cursor.lockState = (value == true) ? CursorLockMode.Confined : CursorLockMode.Locked;
         }
@@ -56,6 +57,7 @@ public class PlayerInteractions : MonoBehaviour
             {
                 hit.transform.SetParent(Camera.main.transform);
                 hit.rigidbody.useGravity = false;
+                Camera.main.transform.GetChild(0).gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
                 //hit.transform.gameObject.GetComponent<Collider>().enabled = false;
             }
             /*else if (hit.transform.gameObject.CompareTag("Interact") && Input.GetMouseButtonDown(0))
@@ -82,8 +84,12 @@ public class PlayerInteractions : MonoBehaviour
         {
             if (Camera.main.transform.childCount > 0)
             {
-                Camera.main.transform.GetChild(0).gameObject.GetComponent<Rigidbody>().useGravity = true;
-                //Camera.main.transform.GetChild(0).gameObject.GetComponent<Collider>().enabled = true;
+                Rigidbody _rigidbody = Camera.main.transform.GetChild(0).gameObject.GetComponent<Rigidbody>();
+                if (_rigidbody)
+                {
+                    _rigidbody.useGravity = true;
+                    _rigidbody.constraints = RigidbodyConstraints.None;
+                }
                 Camera.main.transform.GetChild(0).transform.SetParent(null);
 
             }
@@ -99,11 +105,6 @@ public class PlayerInteractions : MonoBehaviour
             }
             if (canRotateObject)
             {
-                /* Vector3 _pos = Input.mousePosition - initialPosObj;
-                 if (hand.transform.childCount > 0)
-                 {
-                     hand.transform.GetChild(0).transform.Rotate(speedRotateObj * _pos);
-                 }*/
 
                 Camera.main.transform.GetChild(0).transform.Rotate(new Vector3(0, Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * speedRotateObj);
                 return;
@@ -146,5 +147,9 @@ public class PlayerInteractions : MonoBehaviour
 
         }
 
+    }
+    private void Start()
+    {
+        _controller  = GetComponent<PlayerController_LG>();
     }
 } //Fin du script --> Pierrick + Kérian
