@@ -59,7 +59,7 @@ public class ClockTimer : MonoBehaviour
     {
 
 
-       if(_onTimerEnd != null) _onTimerEnd.Invoke();
+       _onTimerEnd?.Invoke();
     }
 
 
