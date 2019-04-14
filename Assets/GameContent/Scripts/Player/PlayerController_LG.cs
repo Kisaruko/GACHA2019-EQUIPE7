@@ -42,6 +42,11 @@ public class PlayerController_LG : MonoBehaviour
     }
 
     /// <summary>
+    /// Indicates if the player is crouch
+    /// </summary>
+    public bool                 isCrouch                        = false;
+
+    /// <summary>
     /// If false, the player cannot rotate the camera
     /// </summary>
     public bool                 canLook                         = true;
@@ -88,6 +93,11 @@ public class PlayerController_LG : MonoBehaviour
     /// Name of the axis used to look in the vertical axis.
     /// </summary>
     public string               viewVerticalAxis                = "Mouse Y";
+
+    /// <summary>
+    /// Name of the input to crouch
+    /// </summary>
+    public string               crouchInput                     = "Crouch";
     #endregion
 
     #region Methods
@@ -115,6 +125,20 @@ public class PlayerController_LG : MonoBehaviour
     /// </summary>
     private void Move()
     {
+        if (Input.GetButton(crouchInput))
+        {
+            if (!isCrouch)
+            {
+                animator.SetBool("Crouch", true);
+                isCrouch = true;
+            }
+        }
+        else if (isCrouch)
+        {
+            animator.SetBool("Crouch", false);
+            isCrouch = false;
+        }
+
         if (!canMove) return;
 
         float _horizontalMove = Input.GetAxis(moveHorizontalAxis);
@@ -176,6 +200,7 @@ public class PlayerController_LG : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
+        if (UIManager.Instance) UIManager.Instance.OnPause += (bool _doPause) => canLook = !_doPause;
         if (UIManager.Instance) UIManager.Instance.OnPause += (bool _doPause) => canLook = !_doPause;
     }
 

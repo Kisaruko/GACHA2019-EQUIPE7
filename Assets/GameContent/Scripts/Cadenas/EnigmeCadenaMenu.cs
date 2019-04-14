@@ -35,9 +35,15 @@ public class EnigmeCadenaMenu : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, Mathf.Infinity, LayerMask.GetMask("Interactive"))&&Input.GetMouseButtonDown(0))
         {
-            if (objSelected) objSelected.transform.localScale = Vector3.one;
+            if (objSelected)
+            {
+                objSelected.transform.localScale = Vector3.one;
+                objSelected.GetComponent<HighlightSurfaceFresnelControler>().SetHighlight(false);
+            }
             objSelected = hit.transform.gameObject;
             objSelected.transform.localScale = Vector3.one * 1.1f;
+            objSelected.GetComponent<HighlightSurfaceFresnelControler>().SetHighlight(true);
+
             //Debug.Log(objSelected.name);
 
             //att faire une highLigh
