@@ -27,6 +27,9 @@ public class UIManager : MonoBehaviour
     private void LoadScene(int _sceneIndex)
     {
         if (isPaused) Time.timeScale = 1;
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = true;
+
         OnLoadScene?.Invoke();
         loadingAnchor.SetActive(true);
         SceneManager.LoadScene(_sceneIndex);
