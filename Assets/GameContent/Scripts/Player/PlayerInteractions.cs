@@ -4,11 +4,22 @@ using UnityEngine;
 
 public class PlayerInteractions : MonoBehaviour
 {
-    public GameObject hand;
     private GameObject lastObjectSee;
     public float timerHighlight = 0;
     public float maxtimer = 0.75f;
     public bool canRotateObject;
+    public bool CanRotateObject
+    {
+        get { return canRotateObject; }
+        set
+        {
+            canRotateObject = value;
+            GetComponent<PlayerController_LG>().canLook = !value;
+            GetComponent<PlayerController_LG>().canMove = !value;
+
+            Cursor.lockState = (value == true) ? CursorLockMode.None : CursorLockMode.Locked;
+        }
+    }
     public float speedRotateObj = 0.1f;
     public float distMaxDrop = 3;
     Vector3 initialPosObj;
@@ -41,10 +52,9 @@ public class PlayerInteractions : MonoBehaviour
 
                 }
             }
-            if (hand && Input.GetMouseButtonDown(0) && hit.transform.gameObject.CompareTag("Drop"))
+            if (Input.GetMouseButtonDown(0) && hit.transform.gameObject.CompareTag("Drop"))
             {
-                hit.transform.SetParent(hand.transform);
-                hit.transform.position = hand.transform.position;
+                hit.transform.SetParent(Camera.main.transform);
                 hit.rigidbody.isKinematic = true;
                 hit.transform.gameObject.GetComponent<Collider>().enabled = false;
             }
@@ -62,20 +72,20 @@ public class PlayerInteractions : MonoBehaviour
 
         if (Input.GetMouseButtonUp(0))
         {
-            if (hand.transform.childCount > 0)
+            if (Camera.main.transform.childCount > 0)
             {
-                hand.transform.GetChild(0).gameObject.GetComponent<Rigidbody>().isKinematic = false;
-                hand.transform.GetChild(0).gameObject.GetComponent<Collider>().enabled = true;
-                hand.transform.GetChild(0).transform.SetParent(null);
+                Camera.main.transform.GetChild(0).gameObject.GetComponent<Rigidbody>().isKinematic = false;
+                Camera.main.transform.GetChild(0).gameObject.GetComponent<Collider>().enabled = true;
+                Camera.main.transform.GetChild(0).transform.SetParent(null);
 
             }
-            canRotateObject = false;
+            CanRotateObject = false;
         }
         if (Input.GetMouseButton(0))
         {
             if (Input.GetMouseButtonDown(1))
             {
-                canRotateObject = !canRotateObject;
+                CanRotateObject = !canRotateObject;
                 initialPosObj = Vector3.zero;
 
             }
@@ -90,35 +100,35 @@ public class PlayerInteractions : MonoBehaviour
                 if (Input.mousePosition.y >= Screen.height * (0.5) && Input.mousePosition.y < Screen.height)
                 {
                     Debug.Log((180 * (Input.mousePosition.y - Screen.height / 2)) / Screen.height);
-                    hand.transform.GetChild(0).transform.eulerAngles = new Vector3(
-                        hand.transform.GetChild(0).transform.eulerAngles.x,
-                        hand.transform.GetChild(0).transform.eulerAngles.y,
+                    Camera.main.transform.GetChild(0).transform.eulerAngles = new Vector3(
+                        Camera.main.transform.GetChild(0).transform.eulerAngles.x,
+                        Camera.main.transform.GetChild(0).transform.eulerAngles.y,
                         (360 * (Input.mousePosition.y - Screen.height / 2)) / Screen.height);
                 }
                 else if (Input.mousePosition.y <= Screen.height * (0.5) && Input.mousePosition.y > 0)
                 {
                     Debug.Log((180 * Input.mousePosition.y) / Screen.height);
-                    hand.transform.GetChild(0).transform.eulerAngles = new Vector3(
-                        hand.transform.GetChild(0).transform.eulerAngles.x,
-                        hand.transform.GetChild(0).transform.eulerAngles.y,
+                    Camera.main.transform.GetChild(0).transform.eulerAngles = new Vector3(
+                        Camera.main.transform.GetChild(0).transform.eulerAngles.x,
+                        Camera.main.transform.GetChild(0).transform.eulerAngles.y,
                         (360 * (Input.mousePosition.y)) / Screen.height);
                 }
 
                 if (Input.mousePosition.x >= Screen.width * (0.5) && Input.mousePosition.x < Screen.width)
                 {
                     Debug.Log((180 * (Input.mousePosition.x - Screen.width / 2)) / Screen.width);
-                    hand.transform.GetChild(0).transform.eulerAngles = new Vector3(
-                        hand.transform.GetChild(0).transform.eulerAngles.x,
+                    Camera.main.transform.GetChild(0).transform.eulerAngles = new Vector3(
+                        Camera.main.transform.GetChild(0).transform.eulerAngles.x,
                         (360 * (Input.mousePosition.x)) / Screen.width,
-                        hand.transform.GetChild(0).transform.eulerAngles.z);
+                        Camera.main.transform.GetChild(0).transform.eulerAngles.z);
                 }
                 else if (Input.mousePosition.x <= Screen.width * (0.5) && Input.mousePosition.x > 0)
                 {
                     Debug.Log((180 * Input.mousePosition.x) / Screen.width);
-                    hand.transform.GetChild(0).transform.eulerAngles = new Vector3(
-                        hand.transform.GetChild(0).transform.eulerAngles.x,
+                    Camera.main.transform.GetChild(0).transform.eulerAngles = new Vector3(
+                        Camera.main.transform.GetChild(0).transform.eulerAngles.x,
                         (360 * (Input.mousePosition.x)) / Screen.width,
-                        hand.transform.GetChild(0).transform.eulerAngles.z);
+                        Camera.main.transform.GetChild(0).transform.eulerAngles.z);
                 }
             }
 
