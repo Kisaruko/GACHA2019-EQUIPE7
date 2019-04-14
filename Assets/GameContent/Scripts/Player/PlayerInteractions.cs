@@ -13,6 +13,10 @@ public class PlayerInteractions : MonoBehaviour
     public float distMaxDrop = 3;
     Vector3 initialPosObj;
 
+    //True if there is a player interactionand timerHighlight is zero
+    private bool _canDisplayInteraction;
+    public bool CanDisplayInteraction { get { return _canDisplayInteraction; } } //Readonly _canDisplayInteraction
+
     void Update()
     {
         RaycastHit hit;
@@ -22,6 +26,8 @@ public class PlayerInteractions : MonoBehaviour
             {
                 lastObjectSee = hit.transform.gameObject;
                 timerHighlight = 0;
+
+                _canDisplayInteraction = false; //Resets can display to false
             }
             else
             {
@@ -31,7 +37,7 @@ public class PlayerInteractions : MonoBehaviour
                 }
                 else
                 {
-                    // reticule a mettre
+                    _canDisplayInteraction = true; //Can display reticle
                 }
             }
             if (hand && Input.GetMouseButtonDown(0) && hit.transform.gameObject.CompareTag("Drop"))
@@ -48,6 +54,11 @@ public class PlayerInteractions : MonoBehaviour
             }
 
         }
+        else
+        {
+            _canDisplayInteraction = false; //Resets can display to false
+        }
+
         if (Input.GetMouseButtonUp(0))
         {
             if (hand.transform.childCount > 0)
