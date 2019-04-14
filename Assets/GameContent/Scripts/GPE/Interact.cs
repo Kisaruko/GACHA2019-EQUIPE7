@@ -5,10 +5,5 @@ using UnityEngine.Events;
 
 public class Interact : MonoBehaviour
 {
-    public UnityEvent myEvent;
-
-    public void StartEvent()
-    {
-        myEvent.Invoke();
-    }
+    public ObjectType type;
 }

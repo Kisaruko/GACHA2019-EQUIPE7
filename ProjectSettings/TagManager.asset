@@ -6,7 +6,6 @@ TagManager:
   tags:
   - key
   - Drop
-  - Interact|GameController
   layers:
   - Default
   - TransparentFX

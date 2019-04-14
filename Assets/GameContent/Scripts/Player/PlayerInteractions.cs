@@ -58,11 +58,11 @@ public class PlayerInteractions : MonoBehaviour
                 hit.rigidbody.useGravity = false;
                 //hit.transform.gameObject.GetComponent<Collider>().enabled = false;
             }
-            else if (hit.transform.gameObject.CompareTag("Interact") && Input.GetMouseButtonDown(0))
+            /*else if (hit.transform.gameObject.CompareTag("Interact") && Input.GetMouseButtonDown(0))
             {
                 try
                 {
-                    hit.transform.gameObject.GetComponent<Interact>().StartEvent();
+                    //hit.transform.gameObject.GetComponent<Interact>().StartEvent();
                 }
                 catch (System.Exception)
                 {
@@ -70,7 +70,7 @@ public class PlayerInteractions : MonoBehaviour
                     throw;
                 }
                 
-            }
+            }*/
 
         }
         else
