@@ -19,6 +19,15 @@ public class UIManager : MonoBehaviour
         LoadScene(0);
     }
 
+    public void LoadNextScene()
+    {
+        int _index = SceneManager.GetActiveScene().buildIndex;
+        if (_index >= SceneManager.sceneCountInBuildSettings - 1) _index = 0;
+        else _index++;
+
+        LoadScene(_index);
+    }
+
     public void ReloadScene()
     {
         LoadScene(SceneManager.GetActiveScene().buildIndex);

@@ -17,7 +17,7 @@ public class PlayerInteractions : MonoBehaviour
             GetComponent<PlayerController_LG>().canLook = !value;
             GetComponent<PlayerController_LG>().canMove = !value;
 
-            Cursor.lockState = (value == true) ? CursorLockMode.None : CursorLockMode.Locked;
+            Cursor.lockState = (value == true) ? CursorLockMode.Confined : CursorLockMode.Locked;
         }
     }
     public float speedRotateObj = 0.1f;
@@ -55,8 +55,8 @@ public class PlayerInteractions : MonoBehaviour
             if (Input.GetMouseButtonDown(0) && hit.transform.gameObject.CompareTag("Drop"))
             {
                 hit.transform.SetParent(Camera.main.transform);
-                hit.rigidbody.isKinematic = true;
-                hit.transform.gameObject.GetComponent<Collider>().enabled = false;
+                hit.rigidbody.useGravity = false;
+                //hit.transform.gameObject.GetComponent<Collider>().enabled = false;
             }
             else if (hit.transform.gameObject.CompareTag("Interact") && Input.GetMouseButtonDown(0))
             {
@@ -82,8 +82,8 @@ public class PlayerInteractions : MonoBehaviour
         {
             if (Camera.main.transform.childCount > 0)
             {
-                Camera.main.transform.GetChild(0).gameObject.GetComponent<Rigidbody>().isKinematic = false;
-                Camera.main.transform.GetChild(0).gameObject.GetComponent<Collider>().enabled = true;
+                Camera.main.transform.GetChild(0).gameObject.GetComponent<Rigidbody>().useGravity = true;
+                //Camera.main.transform.GetChild(0).gameObject.GetComponent<Collider>().enabled = true;
                 Camera.main.transform.GetChild(0).transform.SetParent(null);
 
             }
@@ -104,6 +104,10 @@ public class PlayerInteractions : MonoBehaviour
                  {
                      hand.transform.GetChild(0).transform.Rotate(speedRotateObj * _pos);
                  }*/
+
+                Camera.main.transform.GetChild(0).transform.Rotate(new Vector3(0, Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * speedRotateObj);
+                return;
+                /*
                 Vector3 posCamera = Camera.main.transform.position;
                 if (Input.mousePosition.y >= Screen.height * (0.5) && Input.mousePosition.y < Screen.height)
                 {
@@ -137,7 +141,7 @@ public class PlayerInteractions : MonoBehaviour
                         Camera.main.transform.GetChild(0).transform.eulerAngles.x,
                         (360 * (Input.mousePosition.x)) / Screen.width,
                         Camera.main.transform.GetChild(0).transform.eulerAngles.z);
-                }
+                }*/
             }
 
         }

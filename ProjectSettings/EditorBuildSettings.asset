@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/GameContent/Scenes/LucasTest.unity
     guid: aa2ebefe93542e44e82b9c50b8ae9766
+  - enabled: 1
+    path: Assets/GameContent/Scenes/FinalScene.unity
+    guid: c5ffc2ecc829cc244889c0c995a380f7
   m_configObjects: {}
