@@ -142,7 +142,7 @@ public class PlayerInteractions : MonoBehaviour
         }
 
     }
-    private void Start()
+    private void Awake()
     {
         controller  = GetComponent<PlayerController_LG>();
     }

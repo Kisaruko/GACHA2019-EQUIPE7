@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Drop
   - Interact
+  - Cadenas
   layers:
   - Default
   - TransparentFX

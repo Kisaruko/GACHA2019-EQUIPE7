@@ -89,7 +89,7 @@ Camera:
   field of view: 60
   orthographic: 0
   orthographic size: 5
-  m_Depth: -1
+  m_Depth: 10
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -166,6 +166,7 @@ MonoBehaviour:
   rigidbody: {fileID: 9112741578141056861}
   canMove: 1
   isMoving: 0
+  isCrouch: 0
   canLook: 1
   speedMove: 3
   speedLook: 0.8
@@ -175,6 +176,7 @@ MonoBehaviour:
   moveVerticalAxis: Vertical
   viewHorizontalAxis: Mouse X
   viewVerticalAxis: Mouse Y
+  crouchInput: Crouch
 --- !u!114 &6567452752054806243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -187,7 +189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6fed0fffe3151a40b4001bca398b9e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hand: {fileID: 761696186175189417}
+  controller: {fileID: 0}
   timerHighlight: 0
   maxtimer: 0.75
   canRotateObject: 0
@@ -206,7 +208,7 @@ Rigidbody:
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!136 &9112741578141056832
