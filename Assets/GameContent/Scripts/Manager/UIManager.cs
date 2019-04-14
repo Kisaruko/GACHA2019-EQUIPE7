@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
@@ -17,6 +15,15 @@ public class UIManager : MonoBehaviour
     public void BackToMenu()
     {
         LoadScene(0);
+    }
+
+    public void LoadNextScene()
+    {
+        int _index = SceneManager.GetActiveScene().buildIndex;
+        if (_index >= SceneManager.sceneCountInBuildSettings - 1) _index = 0;
+        else _index++;
+
+        LoadScene(_index);
     }
 
     public void ReloadScene()
@@ -46,6 +53,14 @@ public class UIManager : MonoBehaviour
         pauseAnchor.SetActive(_doPause);
 
         OnPause?.Invoke(_doPause);
+    }
+
+    public void SetMatriochka(bool _isValid)
+    {
+        if (!AllManager.Instance) return;
+
+        int _index = SceneManager.GetActiveScene().buildIndex - 1;
+        if (_index < AllManager.Instance.Matriochka.Length) AllManager.Instance.Matriochka[_index] = _isValid;
     }
 
     private void Awake()
