@@ -1,0 +1,185 @@
+fileFormatVersion: 2
+guid: 676146c5106526c47aab2c0d1b94c1d0
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: SM_balais
+    100002: SM_buandrie
+    100004: SM_hall
+    100006: SM_hallXBalais
+    100008: //RootNode
+    100010: SM_mur_atelier
+    100012: SM_mur_atelier_01
+    100014: SM_mur_atelier_02
+    100016: SM_mur_atelier_03
+    100018: SM_mur_chambre
+    100020: SM_mur_entre
+    100022: SM_mur_hall
+    100024: SM_plafond
+    100026: SM_sol_atelier
+    100028: SM_sol_chambre
+    100030: SM_sol_hall
+    100032: z
+    400000: SM_balais
+    400002: SM_buandrie
+    400004: SM_hall
+    400006: SM_hallXBalais
+    400008: //RootNode
+    400010: SM_mur_atelier
+    400012: SM_mur_atelier_01
+    400014: SM_mur_atelier_02
+    400016: SM_mur_atelier_03
+    400018: SM_mur_chambre
+    400020: SM_mur_entre
+    400022: SM_mur_hall
+    400024: SM_plafond
+    400026: SM_sol_atelier
+    400028: SM_sol_chambre
+    400030: SM_sol_hall
+    400032: z
+    2100000: 'Material #43'
+    2100002: 'Material #31'
+    2100004: 'Material #38'
+    2100006: 'Material #37'
+    2100008: 'Material #40'
+    2100010: 'Material #39'
+    2100012: 'Material #35'
+    2100014: 'Material #42'
+    2100016: 'Material #36'
+    2100018: 'Material #44'
+    2100020: 'Material #32'
+    2100022: 'Material #41'
+    2100024: 'Material #30'
+    2100026: 'Material #33'
+    2100028: 'Material #29'
+    2300000: SM_balais
+    2300002: SM_buandrie
+    2300004: SM_hall
+    2300006: SM_hallXBalais
+    2300008: SM_mur_atelier
+    2300010: SM_mur_atelier_01
+    2300012: SM_mur_atelier_02
+    2300014: SM_mur_atelier_03
+    2300016: SM_mur_chambre
+    2300018: SM_mur_entre
+    2300020: SM_mur_hall
+    2300022: SM_plafond
+    2300024: SM_sol_atelier
+    2300026: SM_sol_chambre
+    2300028: SM_sol_hall
+    3300000: SM_balais
+    3300002: SM_buandrie
+    3300004: SM_hall
+    3300006: SM_hallXBalais
+    3300008: SM_mur_atelier
+    3300010: SM_mur_atelier_01
+    3300012: SM_mur_atelier_02
+    3300014: SM_mur_atelier_03
+    3300016: SM_mur_chambre
+    3300018: SM_mur_entre
+    3300020: SM_mur_hall
+    3300022: SM_plafond
+    3300024: SM_sol_atelier
+    3300026: SM_sol_chambre
+    3300028: SM_sol_hall
+    4300000: SM_mur_atelier_03
+    4300002: SM_mur_atelier
+    4300004: SM_mur_entre
+    4300006: SM_mur_atelier_01
+    4300008: SM_hall
+    4300010: SM_mur_chambre
+    4300012: SM_balais
+    4300014: SM_mur_hall
+    4300016: SM_buandrie
+    4300018: SM_hallXBalais
+    4300020: SM_sol_atelier
+    4300022: SM_sol_chambre
+    4300024: SM_mur_atelier_02
+    4300026: SM_sol_hall
+    4300028: SM_plafond
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
