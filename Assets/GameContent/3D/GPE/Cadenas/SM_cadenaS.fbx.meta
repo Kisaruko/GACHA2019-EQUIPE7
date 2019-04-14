@@ -1,15 +1,62 @@
 fileFormatVersion: 2
-guid: a958b755bd121054ba57da4f62b9850f
+guid: 143dd583c1db4b642a6128906c7d5dbc
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: lambert4
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: cendrier1
-    6400000: //RootNode
+    100000: cadenant
+    100002: centrer
+    100004: cylindre1
+    100006: cylindre2
+    100008: cylindre3
+    100010: cylindre4
+    100012: cylindre5
+    100014: cylindre6
+    100016: joint1
+    100018: joint2
+    100020: ouverture
+    100022: //RootNode
+    100024: support_cadenant
+    400000: cadenant
+    400002: centrer
+    400004: cylindre1
+    400006: cylindre2
+    400008: cylindre3
+    400010: cylindre4
+    400012: cylindre5
+    400014: cylindre6
+    400016: joint1
+    400018: joint2
+    400020: ouverture
+    400022: //RootNode
+    400024: support_cadenant
+    2100000: lambert2
+    2300000: centrer
+    2300002: cylindre1
+    2300004: cylindre2
+    2300006: cylindre3
+    2300008: cylindre4
+    2300010: cylindre5
+    2300012: cylindre6
+    2300014: support_cadenant
+    3300000: centrer
+    3300002: cylindre1
+    3300004: cylindre2
+    3300006: cylindre3
+    3300008: cylindre4
+    3300010: cylindre5
+    3300012: cylindre6
+    3300014: support_cadenant
+    4300000: centrer
+    4300002: cylindre4
+    4300004: cylindre1
+    4300006: cylindre5
+    4300008: cylindre2
+    4300010: cylindre3
+    4300012: cylindre6
+    4300014: ouverture
+    4300016: support_cadenant
+    9500000: //RootNode
+    13700000: ouverture
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -41,16 +88,16 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 10
+    globalScale: 1
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 1
+    generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
@@ -63,7 +110,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -90,7 +137,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

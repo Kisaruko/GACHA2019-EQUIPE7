@@ -1,15 +1,54 @@
 fileFormatVersion: 2
-guid: a958b755bd121054ba57da4f62b9850f
+guid: 1456c621e320a0d4d8f16c8bd7a33308
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: lambert4
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: cendrier1
-    6400000: //RootNode
+    100000: Bind_aiguille1_A
+    100002: Bind_aiguille1_B
+    100004: Bind_aiguille2_A
+    100006: Bind_aiguille2_B
+    100008: Bind_aiguille3_A
+    100010: Bind_aiguille3_B
+    100012: grande_aiguille
+    100014: horloge
+    100016: Ik_pendule_A
+    100018: Ik_pendule_B
+    100020: pCylinder34
+    100022: pendule
+    100024: petite_aiguile
+    100026: //RootNode
+    100028: troteuse
+    400000: Bind_aiguille1_A
+    400002: Bind_aiguille1_B
+    400004: Bind_aiguille2_A
+    400006: Bind_aiguille2_B
+    400008: Bind_aiguille3_A
+    400010: Bind_aiguille3_B
+    400012: grande_aiguille
+    400014: horloge
+    400016: Ik_pendule_A
+    400018: Ik_pendule_B
+    400020: pCylinder34
+    400022: pendule
+    400024: petite_aiguile
+    400026: //RootNode
+    400028: troteuse
+    2100000: lambert1
+    2300000: horloge
+    2300002: pCylinder34
+    3300000: horloge
+    3300002: pCylinder34
+    4300000: pendule
+    4300002: petite_aiguile
+    4300004: grande_aiguille
+    4300006: troteuse
+    4300008: horloge
+    4300010: pCylinder34
+    9500000: //RootNode
+    13700000: grande_aiguille
+    13700002: pendule
+    13700004: petite_aiguile
+    13700006: troteuse
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -41,16 +80,16 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 10
+    globalScale: 1
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 1
+    generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
@@ -63,7 +102,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -90,7 +129,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

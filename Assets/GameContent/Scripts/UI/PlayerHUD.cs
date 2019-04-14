@@ -2,14 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class PlayerHUD : MonoBehaviour
 {
     #region Attributes
 
-    [SerializeField] private CanvasGroup _reticle;
-    [SerializeField] private PlayerInteractions _intercations;
+    [SerializeField] private CanvasGroup _reticle = null;
+    [SerializeField] private PlayerInteractions _intercations = null;
     private bool _displayingReticle;
+    private float _targeReticleAlpha;
 
     #endregion
 
@@ -32,6 +34,7 @@ public class PlayerHUD : MonoBehaviour
                 SetDisplayReticle(_displayingReticle);
             }
         }
+
     }
 
     #endregion
@@ -47,6 +50,7 @@ public class PlayerHUD : MonoBehaviour
         if(state == true)
         {
             _reticle.alpha = 1;
+            _reticle.transform.DOPunchScale(Vector3.one * 1.02f, 0.3f,1);
         }
         else
         {
