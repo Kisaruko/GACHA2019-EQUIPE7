@@ -7,7 +7,7 @@ public class HighlightSurfaceFresnelControler : MonoBehaviour
 {
     private Material _material;
     [SerializeField, Range(0, 20)] private float _flashSpeed = 2;
-    private bool _flashing;
+    public bool _flashing;
 
 
     private void Awake()
