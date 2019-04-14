@@ -38,6 +38,7 @@ public class PlayerInteractions : MonoBehaviour
                 else
                 {
                     _canDisplayInteraction = true; //Can display reticle
+
                 }
             }
             if (hand && Input.GetMouseButtonDown(0) && hit.transform.gameObject.CompareTag("Drop"))
