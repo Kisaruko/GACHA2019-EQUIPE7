@@ -8,8 +8,10 @@
         _Metallic ("Metallic", Range(0,1)) = 0.0
 		[Header(Dissolve), Space]
 		_DissolveMap("Dissolve Map", 2D) = "black" {}
+		_DissolvePath("Dissolve Path", 2D) = "black" {}
 		_DissolveAmount ("Dissolve Amount", Range(0,1)) = 0
 		_HiddenColor("Hidden Color", Color) = (1,1,1,1)
+		_ScrollSpeed("Scroll Speed", Range(0,1)) = 0
     }
     SubShader
     {
@@ -25,6 +27,7 @@
 
         sampler2D _MainTex;
 		sampler2D _DissolveMap;
+		sampler2D _DissolvePath;
 
         struct Input
         {
@@ -37,6 +40,14 @@
         fixed4 _Color;
 		fixed _DissolveAmount;
 		fixed4 _HiddenColor;
+		float _ScrollSpeed;
+
+
+		float2 Panner(float2 texcoord)
+		{
+			texcoord.x += _Time * _ScrollSpeed;
+			return texcoord;
+		}
 
         // Add instancing support for this shader. You need to check 'Enable Instancing' on materials that use the shader.
         // See https://docs.unity3d.com/Manual/GPUInstancing.html for more information about instancing.
@@ -49,8 +60,14 @@
         {
             // Albedo comes from a texture tinted by color
             fixed4 c = tex2D (_MainTex, IN.uv_MainTex) * _Color;
-			fixed4 dissolveMap = tex2D(_DissolveMap, IN.uv_DissolveMap);
-			fixed dissolveAmount = round((1 - dissolveMap) - _DissolveAmount + 0.5f);
+
+			fixed4 dissolveMap = tex2D(_DissolveMap, Panner(IN.uv_MainTex)) * 2;
+			fixed4 dissolveMapInv = tex2D(_DissolveMap, Panner(-IN.uv_MainTex * 2)) * 2 ;
+
+			fixed4 dissolvePath = tex2D(_DissolvePath, IN.uv_MainTex);
+
+			_DissolveAmount = lerp(0.5, 1, _DissolveAmount);
+			fixed dissolveAmount = round(1 - dissolveMap * dissolveMapInv * dissolvePath - _DissolveAmount + 0.5);
 
             o.Albedo = dissolveAmount * c.rgb + (1 - dissolveAmount) * _HiddenColor;
             // Metallic and smoothness come from slider variables
