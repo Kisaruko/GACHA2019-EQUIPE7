@@ -11,10 +11,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/GameContent/Scenes/MainMenu.unity
     guid: f196f9213c2b616448218fa97103846b
-  - enabled: 1
+  - enabled: 0
     path: Assets/GameContent/Scenes/LucasTest.unity
     guid: aa2ebefe93542e44e82b9c50b8ae9766
   - enabled: 1
+<<<<<<< HEAD
     path: Assets/GameContent/Scenes/FinalScene.unity
     guid: c5ffc2ecc829cc244889c0c995a380f7
+=======
+    path: Assets/GameContent/Scenes/Lvl_Blocking.unity
+    guid: 64e08ec2f532e954c97750be9284db98
+  - enabled: 1
+    path: Assets/GameContent/Scenes/backup_angelo/psy_angelo.unity
+    guid: 42ef5ea4981f8b54bb966b3dca466532
+>>>>>>> Perso_Angelo
   m_configObjects: {}
