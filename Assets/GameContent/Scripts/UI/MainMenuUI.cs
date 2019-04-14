@@ -62,6 +62,14 @@ public class MainMenuUI : MonoBehaviour
         panel.blocksRaycasts = true;
     }
 
+    /// <summary>
+    /// Leave application
+    /// </summary>
+    public void Quit()
+    {
+        Application.Quit();
+    }
+
     #endregion
 
     #endregion
