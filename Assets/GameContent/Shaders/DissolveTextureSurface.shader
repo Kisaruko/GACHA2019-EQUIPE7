@@ -4,6 +4,7 @@
     {
         _Color ("Color", Color) = (1,1,1,1)
         _MainTex ("Albedo (RGB)", 2D) = "white" {}
+		_Normal("Normal Map", 2D) = "bump" {}
         _Glossiness ("Smoothness", Range(0,1)) = 0.5
         _Metallic ("Metallic", Range(0,1)) = 0.0
 		[Header(Dissolve), Space]
@@ -11,7 +12,7 @@
 		_DissolvePath("Dissolve Path", 2D) = "black" {}
 		_DissolveAmount ("Dissolve Amount", Range(0,1)) = 0
 		_HiddenColor("Hidden Color", Color) = (1,1,1,1)
-		_ScrollSpeed("Scroll Speed", Range(0,1)) = 0
+		_ScrollSpeed("Scroll Speed", Range(0,1)) = 0.2
     }
     SubShader
     {
@@ -26,6 +27,7 @@
         #pragma target 3.0
 
         sampler2D _MainTex;
+        sampler2D _Normal;
 		sampler2D _DissolveMap;
 		sampler2D _DissolvePath;
 
@@ -72,6 +74,7 @@
             o.Albedo = dissolveAmount * c.rgb + (1 - dissolveAmount) * _HiddenColor;
             // Metallic and smoothness come from slider variables
             o.Metallic = _Metallic;
+			o.Normal = UnpackNormal(tex2D(_Normal, IN.uv_MainTex));
             o.Smoothness = _Glossiness;
             o.Alpha = c.a;
 			o.Emission = (1 - dissolveAmount) * 0.5;

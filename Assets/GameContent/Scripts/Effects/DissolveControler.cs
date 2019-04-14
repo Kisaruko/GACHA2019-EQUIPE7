@@ -9,16 +9,12 @@ public class DissolveControler : MonoBehaviour
     [SerializeField, Range(0, 1)] private float _dissolveAmount;
 
 
-    public float DissolveAmount
+    public void SetDissolveAmount(float amount)
     {
-        get { return _dissolveAmount; }
-        set
+        _dissolveAmount = amount;
+        if (_mat != null)
         {
-            _dissolveAmount = value;
-            if (_mat != null)
-            {
-                _mat.SetFloat("_DissolveAmount", _dissolveAmount);
-            }
+            _mat.SetFloat("_DissolveAmount", _dissolveAmount);
         }
     }
 

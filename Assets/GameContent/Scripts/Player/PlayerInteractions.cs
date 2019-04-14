@@ -2,7 +2,7 @@
 
 public class PlayerInteractions : MonoBehaviour
 {
-    public PlayerController_LG _controller;
+    public PlayerController_LG controller;
     private GameObject lastObjectSee;
     public float timerHighlight = 0;
     public float maxtimer = 0.75f;
@@ -13,8 +13,8 @@ public class PlayerInteractions : MonoBehaviour
         set
         {
             canRotateObject = value;
-            _controller.canLook = !value;
-            _controller.canMove = !value;
+            controller.canLook = !value;
+            controller.canMove = !value;
 
             Cursor.lockState = (value == true) ? CursorLockMode.Confined : CursorLockMode.Locked;
         }
@@ -26,6 +26,13 @@ public class PlayerInteractions : MonoBehaviour
     //True if there is a player interactionand timerHighlight is zero
     private bool _canDisplayInteraction;
     public bool CanDisplayInteraction { get { return _canDisplayInteraction; } } //Readonly _canDisplayInteraction
+
+    public void Desactive()
+    {
+        GetComponent<Animator>().enabled = false;
+        controller.enabled = false;
+        this.enabled = false;
+    }
 
     void Update()
     {
@@ -133,6 +140,6 @@ public class PlayerInteractions : MonoBehaviour
     }
     private void Start()
     {
-        _controller  = GetComponent<PlayerController_LG>();
+        controller  = GetComponent<PlayerController_LG>();
     }
 } //Fin du script --> Pierrick + Kérian

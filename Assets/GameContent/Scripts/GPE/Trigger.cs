@@ -36,7 +36,7 @@ public class Trigger : MonoBehaviour
 
                 Destroy(_prefab, (prefabText.Length / 2));
             }
-            interactEvent.Invoke();
+           if(interactType== _interact.type) interactEvent.Invoke();
         }
     }
 }
