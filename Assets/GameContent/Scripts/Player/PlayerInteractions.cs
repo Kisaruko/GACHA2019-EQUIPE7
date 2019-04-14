@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerInteractions : MonoBehaviour
 {
@@ -58,22 +56,7 @@ public class PlayerInteractions : MonoBehaviour
                 hit.transform.SetParent(Camera.main.transform);
                 hit.rigidbody.useGravity = false;
                 Camera.main.transform.GetChild(0).gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
-                //hit.transform.gameObject.GetComponent<Collider>().enabled = false;
             }
-            /*else if (hit.transform.gameObject.CompareTag("Interact") && Input.GetMouseButtonDown(0))
-            {
-                try
-                {
-                    //hit.transform.gameObject.GetComponent<Interact>().StartEvent();
-                }
-                catch (System.Exception)
-                {
-
-                    throw;
-                }
-                
-            }*/
-
         }
         else
         {

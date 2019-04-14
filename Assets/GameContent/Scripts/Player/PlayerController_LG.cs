@@ -213,7 +213,6 @@ public class PlayerController_LG : MonoBehaviour
         Cursor.visible = false;
 
         if (UIManager.Instance) UIManager.Instance.OnPause += (bool _doPause) => canLook = !_doPause;
-        if (UIManager.Instance) UIManager.Instance.OnPause += (bool _doPause) => canLook = !_doPause;
     }
 
     // Update is called once per frame
