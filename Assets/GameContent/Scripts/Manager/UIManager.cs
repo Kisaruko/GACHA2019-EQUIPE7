@@ -42,7 +42,7 @@ public class UIManager : MonoBehaviour
     private IEnumerator LoadCoroutine(int _delay)
     {
         yield return new WaitForSeconds(_delay);
-        if (image != null) image.DOColor(new Color(0, 0, 0, 0), 1);
+        if (image != null) image.DOColor(new Color(0, 0, 0, 1), 1);
         yield return new WaitForSeconds(1);
        LoadNextScene();
     }
