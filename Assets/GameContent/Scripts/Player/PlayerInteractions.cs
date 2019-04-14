@@ -41,10 +41,18 @@ public class PlayerInteractions : MonoBehaviour
                 hit.rigidbody.isKinematic = true;
                 hit.transform.gameObject.GetComponent<Collider>().enabled = false;
             }
-            else if (hit.transform.gameObject.CompareTag("Interact"))
+            else if (hit.transform.gameObject.CompareTag("Interact") && Input.GetMouseButtonDown(0))
             {
-                Debug.Log("Interact");
+                try
+                {
+                    hit.transform.gameObject.GetComponent<Interact>().StartEvent();
+                }
+                catch (System.Exception)
+                {
 
+                    throw;
+                }
+                
             }
 
         }

@@ -187,7 +187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6fed0fffe3151a40b4001bca398b9e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hand: {fileID: 0}
+  hand: {fileID: 761696186175189417}
   timerHighlight: 0
   maxtimer: 0.75
   canRotateObject: 0
