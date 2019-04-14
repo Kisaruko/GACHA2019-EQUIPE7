@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using System;
 
 public class EnigmeCadenaMenu : MonoBehaviour
@@ -12,6 +13,7 @@ public class EnigmeCadenaMenu : MonoBehaviour
     bool canRotate = true;
     string _actualNum = "";
     bool isOpen = false;
+    public UnityEvent onOpen = new UnityEvent();
 
     // Update is called once per frame
     void Update()
@@ -27,10 +29,11 @@ public class EnigmeCadenaMenu : MonoBehaviour
         {
             Debug.Log("finish");
             isOpen = true;
-            
+            GetComponent<Animator>().enabled = true;
+            onOpen.Invoke();
         }
         RaycastHit hit;
-        if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, Mathf.Infinity, LayerMask.GetMask("Interact"))&&Input.GetMouseButtonDown(0))
+        if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, Mathf.Infinity, LayerMask.GetMask("Interactive"))&&Input.GetMouseButtonDown(0))
         {
             
             objSelected = hit.transform.gameObject;
