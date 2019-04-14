@@ -175,6 +175,8 @@ public class PlayerController_LG : MonoBehaviour
         // Disable cursor and lock it on screen
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+
+        if (UIManager.Instance) UIManager.Instance.OnPause += (bool _doPause) => canLook = !_doPause;
     }
 
     // Update is called once per frame
