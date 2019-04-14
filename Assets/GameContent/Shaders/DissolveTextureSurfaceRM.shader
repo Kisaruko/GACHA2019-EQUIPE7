@@ -1,18 +1,18 @@
-﻿Shader "Custom/DissolveTextureSurface"
+﻿Shader "Custom/Dissolve Texture Surface Rough Metallic"
 {
     Properties
     {
         _Color ("Color", Color) = (1,1,1,1)
-		_MainTex ("Albedo (RGB)", 2D) = "white" {}
-		[NoScaleOffset]_Normal("Normal Map", 2D) = "bump" {}
-        _Glossiness ("Smoothness", Range(0,1)) = 0.5
-        _Metallic ("Metallic", Range(0,1)) = 0.0
+        _MainTex ("Albedo (RGB)", 2D) = "white" {}
+		[NoScaleOffset]_NormalMap("Normal Map", 2D) = "bump" {}
+		[NoScaleOffset]_RoughMap ("Roughness", 2D) = "gray" {}
+		[NoScaleOffset]_MetalMap ("Metallic", 2D) = "gray" {}
 		[Header(Dissolve), Space]
 		_DissolveMap("Dissolve Map", 2D) = "black" {}
-		[NoScaleOffset]_DissolvePath("Dissolve Path", 2D) = "black" {}
+		[NoScaleOffset]_DissolvePath("Dissolve Path", 2D) = "white" {}
 		_DissolveAmount ("Dissolve Amount", Range(0,1)) = 0
 		_HiddenColor("Hidden Color", Color) = (1,1,1,1)
-		_HiddenEmissive("Hidden Emissive", Color) = (1,1,1,1)
+		_HiddenEmissive("Hidden Emissive", Color) = (0,0,0,0)
 		_ScrollSpeed("Scroll Speed", Range(0,1)) = 0.2
     }
     SubShader
@@ -28,7 +28,9 @@
         #pragma target 3.0
 
         sampler2D _MainTex;
-        sampler2D _Normal;
+        sampler2D _NormalMap;
+		sampler2D _RoughMap;
+        sampler2D _MetalMap;
 		sampler2D _DissolveMap;
 		sampler2D _DissolvePath;
 
@@ -75,9 +77,9 @@
 
             o.Albedo = dissolveAmount * c.rgb + (1 - dissolveAmount) * _HiddenColor;
             // Metallic and smoothness come from slider variables
-            o.Metallic = _Metallic * dissolveAmount;
-			o.Normal = UnpackNormal(tex2D(_Normal, IN.uv_MainTex));
-            o.Smoothness = _Glossiness * dissolveAmount;
+            o.Metallic = tex2D(_MetalMap, IN.uv_MainTex).r * dissolveAmount;
+			o.Normal = UnpackNormal(tex2D(_NormalMap, IN.uv_MainTex));
+            o.Smoothness = tex2D(_RoughMap, IN.uv_MainTex).r * dissolveAmount;
             o.Alpha = c.a;
 			o.Emission = (1 - dissolveAmount) * _HiddenEmissive;
         }
