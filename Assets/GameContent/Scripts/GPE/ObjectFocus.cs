@@ -48,8 +48,10 @@ public class ObjectFocus : MonoBehaviour
 
         Cursor.lockState = CursorLockMode.Locked;
         //Reactivate player controler
+        playerInteraction.Active();
         GetComponentInChildren<EnigmeCadenaMenu>().currentCamera = playerInteraction.controller.camera;
         _focusCamera.depth = -5;
+        gameObject.tag = "Untagged";
     }
 
 }

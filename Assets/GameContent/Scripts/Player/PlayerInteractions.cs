@@ -34,6 +34,13 @@ public class PlayerInteractions : MonoBehaviour
         this.enabled = false;
     }
 
+    public void Active()
+    {
+        GetComponent<Animator>().enabled = true;
+        controller.enabled = true;
+        this.enabled = true;
+    }
+
     void Update()
     {
         RaycastHit hit;
