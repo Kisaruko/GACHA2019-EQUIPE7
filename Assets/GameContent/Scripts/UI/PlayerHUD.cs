@@ -50,6 +50,7 @@ public class PlayerHUD : MonoBehaviour
         if(state == true)
         {
             _reticle.alpha = 1;
+            _reticle.transform.localScale = Vector3.one;
             _reticle.transform.DOPunchScale(Vector3.one * 1.02f, 0.3f,1);
         }
         else
