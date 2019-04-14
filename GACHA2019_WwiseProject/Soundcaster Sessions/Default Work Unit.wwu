@@ -1,6 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{1B9D9D19-D836-495D-BDBA-05A4CF6D1278}" SchemaVersion="89">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{1B9D9D19-D836-495D-BDBA-05A4CF6D1278}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{1B9D9D19-D836-495D-BDBA-05A4CF6D1278}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="test" ID="{D4FFEABA-BBF9-4A22-A359-B9FB2D9B64A2}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Gacha_Objects_Pendulum_Timer_Normal_LP" ID="{7B70D0C1-D552-4174-9FE5-6A6A2D809879}" WorkUnitID="{15EBC658-44A7-40B6-AA9E-EC40A892BED9}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Gacha_Char_FTPS_Switchcontainer" ID="{2BBC6F06-7423-4A2C-BC8D-CBE5CF3E60F6}" WorkUnitID="{15EBC658-44A7-40B6-AA9E-EC40A892BED9}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Gacha_Amb_Object_Pendulum_Last_10_seconds_OS" ID="{2EE99BAA-E8DA-4C40-939A-2108E8643351}" WorkUnitID="{15EBC658-44A7-40B6-AA9E-EC40A892BED9}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Gacha_UI_Menu_Closingmenu_SFX" ID="{42F3A487-AE43-4AE7-8828-E79F74218BA8}" WorkUnitID="{15EBC658-44A7-40B6-AA9E-EC40A892BED9}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Gacha_UI_Menu_Entering_Section_RC" ID="{10F8F750-21E0-4C37-B03A-F6400BEB725F}" WorkUnitID="{15EBC658-44A7-40B6-AA9E-EC40A892BED9}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Gacha_UI_Menu_Getting_Out_RC" ID="{D4E6754A-9942-4AD5-87EA-72E9D0FCF1C4}" WorkUnitID="{15EBC658-44A7-40B6-AA9E-EC40A892BED9}"/>
+							<Position X="3" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Gacha_UI_Menu_Openmenu_SFX" ID="{E9D60F24-0B28-428A-8619-C8BDE9EC26D4}" WorkUnitID="{15EBC658-44A7-40B6-AA9E-EC40A892BED9}"/>
+							<Position X="3" Y="3"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Wood" ID="{E10BE426-A23B-4A07-A25A-398D7E3D1B52}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>
