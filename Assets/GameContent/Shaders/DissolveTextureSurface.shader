@@ -12,6 +12,7 @@
 		[NoScaleOffset]_DissolvePath("Dissolve Path", 2D) = "black" {}
 		_DissolveAmount ("Dissolve Amount", Range(0,1)) = 0
 		_HiddenColor("Hidden Color", Color) = (1,1,1,1)
+		_HiddenEmissive("Hidden Emissive", Color) = (1,1,1,1)
 		_ScrollSpeed("Scroll Speed", Range(0,1)) = 0.2
     }
     SubShader
@@ -42,6 +43,7 @@
         fixed4 _Color;
 		fixed _DissolveAmount;
 		fixed4 _HiddenColor;
+		fixed4 _HiddenEmissive;
 		float _ScrollSpeed;
 
 
@@ -77,7 +79,7 @@
 			o.Normal = UnpackNormal(tex2D(_Normal, IN.uv_MainTex));
             o.Smoothness = _Glossiness * dissolveAmount;
             o.Alpha = c.a;
-			o.Emission = (1 - dissolveAmount) * 0.5;
+			o.Emission = (1 - dissolveAmount) * _HiddenEmissive;
         }
         ENDCG
     }
