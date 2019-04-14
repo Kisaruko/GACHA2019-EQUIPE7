@@ -9,7 +9,7 @@
 		[Header(Dissolve), Space]
 		_DissolveMap("Dissolve Map", 2D) = "black" {}
 		_DissolveAmount ("Dissolve Amount", Range(0,1)) = 0
-		_DissolvedColor("Dissolved Color", Color) = (1,1,1,1)
+		_HiddenColor("Hidden Color", Color) = (1,1,1,1)
     }
     SubShader
     {
@@ -35,6 +35,8 @@
         half _Glossiness;
         half _Metallic;
         fixed4 _Color;
+		fixed _DissolveAmount;
+		fixed4 _HiddenColor;
 
         // Add instancing support for this shader. You need to check 'Enable Instancing' on materials that use the shader.
         // See https://docs.unity3d.com/Manual/GPUInstancing.html for more information about instancing.
@@ -47,11 +49,15 @@
         {
             // Albedo comes from a texture tinted by color
             fixed4 c = tex2D (_MainTex, IN.uv_MainTex) * _Color;
-            o.Albedo = c.rgb;
+			fixed4 dissolveMap = tex2D(_DissolveMap, IN.uv_DissolveMap);
+			fixed dissolveAmount = round((1 - dissolveMap) - _DissolveAmount + 0.5f);
+
+            o.Albedo = dissolveAmount * c.rgb + (1 - dissolveAmount) * _HiddenColor;
             // Metallic and smoothness come from slider variables
             o.Metallic = _Metallic;
             o.Smoothness = _Glossiness;
             o.Alpha = c.a;
+			o.Emission = (1 - dissolveAmount) * 0.5;
         }
         ENDCG
     }
