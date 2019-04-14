@@ -41,6 +41,23 @@ public class PlayerController_LG : MonoBehaviour
         }
     }
 
+    /// <summary>Backing field for <see cref="IsCrouch"/>.</summary>
+    public bool                 isCrouch                        = false;
+
+    /// <summary>
+    /// Indicates if the player is crouch
+    /// </summary>
+    public bool                 IsCrouch
+    {
+        get { return isCrouch; }
+        set
+        {
+            isCrouch = value;
+            canMove = !value;
+            if (isMoving) IsMoving = false;
+        }
+    }
+
     /// <summary>
     /// If false, the player cannot rotate the camera
     /// </summary>
@@ -88,6 +105,11 @@ public class PlayerController_LG : MonoBehaviour
     /// Name of the axis used to look in the vertical axis.
     /// </summary>
     public string               viewVerticalAxis                = "Mouse Y";
+
+    /// <summary>
+    /// Name of the input to crouch
+    /// </summary>
+    public string               crouchInput                     = "Crouch";
     #endregion
 
     #region Methods
@@ -115,6 +137,20 @@ public class PlayerController_LG : MonoBehaviour
     /// </summary>
     private void Move()
     {
+        if (Input.GetButton(crouchInput))
+        {
+            if (!isCrouch)
+            {
+                animator.SetBool("isCrouch", true);
+                IsCrouch = true;
+            }
+        }
+        else if (isCrouch)
+        {
+            animator.SetBool("isCrouch", false);
+            IsCrouch = false;
+        }
+
         if (!canMove) return;
 
         float _horizontalMove = Input.GetAxis(moveHorizontalAxis);
@@ -175,6 +211,9 @@ public class PlayerController_LG : MonoBehaviour
         // Disable cursor and lock it on screen
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+
+        if (UIManager.Instance) UIManager.Instance.OnPause += (bool _doPause) => canLook = !_doPause;
+        if (UIManager.Instance) UIManager.Instance.OnPause += (bool _doPause) => canLook = !_doPause;
     }
 
     // Update is called once per frame
