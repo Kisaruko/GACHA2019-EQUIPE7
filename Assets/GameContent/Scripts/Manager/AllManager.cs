@@ -3,7 +3,7 @@
 public class AllManager : MonoBehaviour
 {
     public static AllManager Instance;
-    public bool[] Matriochka = new bool[7];
+    public bool[] Matriochka = new bool[5];
 
     public int colorBlindEnumIndex;
 

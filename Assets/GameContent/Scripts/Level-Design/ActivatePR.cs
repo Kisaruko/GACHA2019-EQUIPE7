@@ -10,17 +10,13 @@ public class ActivatePR : MonoBehaviour
     {
         if (!AllManager.Instance) yield break;
 
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(7);
 
         for (int _i = 0; _i < AllManager.Instance.Matriochka.Length; _i++)
         {
             if (_i < matriochka.Length) matriochka[_i].SetActive(AllManager.Instance.Matriochka[_i]);
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(.25f);
         }
-
-        yield return new WaitForSeconds(5);
-
-        UIManager.Instance.BackToMenu();
     }
 
     // Start is called before the first frame update

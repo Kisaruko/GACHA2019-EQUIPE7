@@ -85,10 +85,12 @@ public class UIManager : MonoBehaviour
 
     public void SetMatriochka(bool _isValid)
     {
-        if (!AllManager.Instance) return;
+        if (!AllManager.Instance || !_isValid) return;
 
-        int _index = SceneManager.GetActiveScene().buildIndex - 1;
-        if (_index < AllManager.Instance.Matriochka.Length) AllManager.Instance.Matriochka[_index] = _isValid;
+        foreach (bool _true in AllManager.Instance.Matriochka)
+        {
+            _isValid = true;
+        }
     }
     #endregion
 
