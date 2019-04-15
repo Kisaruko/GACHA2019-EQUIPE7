@@ -12,14 +12,329 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ef0ae55905997e46b609618b6609500, type: 3}
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
-  AcousticTextureWwu: []
-  AuxBusWwu: []
-  BankWwu: []
-  EventWwu: []
-  RtpcWwu: []
-  StateWwu: []
-  SwitchWwu: []
-  TriggerWwu: []
-  ExpandedItems: []
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 257e3f0b46f21b43ad734757d2ac66cc
+    GuidInternal: 
+    m_lastTime: -8586463603050138257
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: c07a1b9b1a44124fab511cd8b7ecdc5b
+    GuidInternal: 
+    m_lastTime: -8586463603050247075
+    List: []
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: f52f714d0b72234cbb14f253ab4b5b6e
+    GuidInternal: 
+    m_lastTime: -8586463603050176680
+    List: []
+  - PhysicalPath: SoundBanks\Gacha2019.wwu
+    ParentPhysicalPath: 
+    guid: b7585c9064dea147bc9890a3692076bb
+    GuidInternal: 
+    m_lastTime: -8586463240835604134
+    List:
+    - name: Gacha_2019_Soundbank
+      guid: 983cba423f1dea4ca09222101ad7837d
+      id: 2501824770
+      PathAndIcons:
+      - ElementName: Gacha2019
+        ObjectType: 12
+      - ElementName: Gacha_2019_Soundbank
+        ObjectType: 7
+      Path: Gacha2019\Gacha_2019_Soundbank
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 2c5c0cee0631ca4eb3f387e0ab21042b
+    GuidInternal: 
+    m_lastTime: -8586463242036988479
+    List: []
+  - PhysicalPath: Events\Gacha2019.wwu
+    ParentPhysicalPath: 
+    guid: 58c6eb15a744b640aa9eec40a892bed9
+    GuidInternal: 
+    m_lastTime: -8586463242037049270
+    List:
+    - name: Gacha_Amb_city_exterieure_LP
+      guid: c8453751bac01947adf9fd04e0d27e53
+      id: 2701662840
+      PathAndIcons:
+      - ElementName: Gacha2019
+        ObjectType: 12
+      - ElementName: Ambiances
+        ObjectType: 4
+      - ElementName: Gacha_Amb_city_exterieure_LP
+        ObjectType: 3
+      Path: Gacha2019\Ambiances\Gacha_Amb_city_exterieure_LP
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Gacha_Amb_Cuisine_Frigo_LP
+      guid: 05d643230a577e4ebb0787acbb5eac90
+      id: 648737712
+      PathAndIcons:
+      - ElementName: Gacha2019
+        ObjectType: 12
+      - ElementName: Ambiances
+        ObjectType: 4
+      - ElementName: Gacha_Amb_Cuisine_Frigo_LP
+        ObjectType: 3
+      Path: Gacha2019\Ambiances\Gacha_Amb_Cuisine_Frigo_LP
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Gacha_Amb_Feedback_Full_Complete_LP_PH
+      guid: 7544edb2df927f46bc91c9af79fe2371
+      id: 374124454
+      PathAndIcons:
+      - ElementName: Gacha2019
+        ObjectType: 12
+      - ElementName: Ambiances
+        ObjectType: 4
+      - ElementName: Gacha_Amb_Feedback_Full_Complete_LP_PH
+        ObjectType: 3
+      Path: Gacha2019\Ambiances\Gacha_Amb_Feedback_Full_Complete_LP_PH
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Gacha_Amb_Object_Pendulum_Last_10_seconds_OS
+      guid: aa9be92edae8404c939a2108e8643351
+      id: 1831861089
+      PathAndIcons:
+      - ElementName: Gacha2019
+        ObjectType: 12
+      - ElementName: Gacha_Amb_Object_Pendulum_Last_10_seconds_OS
+        ObjectType: 3
+      Path: Gacha2019\Gacha_Amb_Object_Pendulum_Last_10_seconds_OS
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Gacha_Ambi_General_Apartment_LP
+      guid: 050c4024a8f8f04994c1a248ba66bcd7
+      id: 2948500498
+      PathAndIcons:
+      - ElementName: Gacha2019
+        ObjectType: 12
+      - ElementName: Ambiances
+        ObjectType: 4
+      - ElementName: Gacha_Ambi_General_Apartment_LP
+        ObjectType: 3
+      Path: Gacha2019\Ambiances\Gacha_Ambi_General_Apartment_LP
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Gacha_Char_FTPS_Switchcontainer
+      guid: 066fbc2b23742c4abc8dcbe5cf3e60f6
+      id: 2571062478
+      PathAndIcons:
+      - ElementName: Gacha2019
+        ObjectType: 12
+      - ElementName: Gacha_Char_FTPS_Switchcontainer
+        ObjectType: 3
+      Path: Gacha2019\Gacha_Char_FTPS_Switchcontainer
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Gacha_FX_Pickup_Padlock_OS
+      guid: 73a2339ed11edd438a661b97fb37d751
+      id: 883481547
+      PathAndIcons:
+      - ElementName: Gacha2019
+        ObjectType: 12
+      - ElementName: Gacha_FX_Pickup_Padlock_OS
+        ObjectType: 3
+      Path: Gacha2019\Gacha_FX_Pickup_Padlock_OS
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Gacha_FX_Pickup_Padlock_Rolling_OS
+      guid: 61e0e278f6fe234c893bfd89c2f4eafe
+      id: 158832197
+      PathAndIcons:
+      - ElementName: Gacha2019
+        ObjectType: 12
+      - ElementName: Gacha_FX_Pickup_Padlock_Rolling_OS
+        ObjectType: 3
+      Path: Gacha2019\Gacha_FX_Pickup_Padlock_Rolling_OS
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Gacha_Musique_Radio_RC
+      guid: b9387dce394e05448427e357bffceb9b
+      id: 1471087201
+      PathAndIcons:
+      - ElementName: Gacha2019
+        ObjectType: 12
+      - ElementName: Ambiances
+        ObjectType: 4
+      - ElementName: Gacha_Musique_Radio_RC
+        ObjectType: 3
+      Path: Gacha2019\Ambiances\Gacha_Musique_Radio_RC
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Gacha_Objects_Pendulum_Timer_Normal_LP
+      guid: c1d0707b52d574419fe56a6a2d809879
+      id: 917303546
+      PathAndIcons:
+      - ElementName: Gacha2019
+        ObjectType: 12
+      - ElementName: Ambiances
+        ObjectType: 4
+      - ElementName: Gacha_Objects_Pendulum_Timer_Normal_LP
+        ObjectType: 3
+      Path: Gacha2019\Ambiances\Gacha_Objects_Pendulum_Timer_Normal_LP
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Gacha_UI_Menu_Closingmenu_SFX
+      guid: 87a4f34243aee74a8828e79f74218ba8
+      id: 546934229
+      PathAndIcons:
+      - ElementName: Gacha2019
+        ObjectType: 12
+      - ElementName: UI Menu
+        ObjectType: 4
+      - ElementName: Gacha_UI_Menu_Closingmenu_SFX
+        ObjectType: 3
+      Path: Gacha2019\UI Menu\Gacha_UI_Menu_Closingmenu_SFX
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Gacha_UI_Menu_Entering_Section_RC
+      guid: 50f7f810e021374cb03af6400beb725f
+      id: 2481369869
+      PathAndIcons:
+      - ElementName: Gacha2019
+        ObjectType: 12
+      - ElementName: UI Menu
+        ObjectType: 4
+      - ElementName: Gacha_UI_Menu_Entering_Section_RC
+        ObjectType: 3
+      Path: Gacha2019\UI Menu\Gacha_UI_Menu_Entering_Section_RC
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Gacha_UI_Menu_Getting_Out_RC
+      guid: 4a75e6d44299d54a87ea72e9d0fcf1c4
+      id: 2698804590
+      PathAndIcons:
+      - ElementName: Gacha2019
+        ObjectType: 12
+      - ElementName: UI Menu
+        ObjectType: 4
+      - ElementName: Gacha_UI_Menu_Getting_Out_RC
+        ObjectType: 3
+      Path: Gacha2019\UI Menu\Gacha_UI_Menu_Getting_Out_RC
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Gacha_UI_Menu_Openmenu_SFX
+      guid: 240fd6e9280b8a428619c8bde9ec26d4
+      id: 3911249542
+      PathAndIcons:
+      - ElementName: Gacha2019
+        ObjectType: 12
+      - ElementName: UI Menu
+        ObjectType: 4
+      - ElementName: Gacha_UI_Menu_Openmenu_SFX
+        ObjectType: 3
+      Path: Gacha2019\UI Menu\Gacha_UI_Menu_Openmenu_SFX
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Gachai_Amb_Chambre_Radiator_LP
+      guid: e9985309e38c2247bd992e7c019f8c2a
+      id: 4100535446
+      PathAndIcons:
+      - ElementName: Gacha2019
+        ObjectType: 12
+      - ElementName: Ambiances
+        ObjectType: 4
+      - ElementName: Gachai_Amb_Chambre_Radiator_LP
+        ObjectType: 3
+      Path: Gacha2019\Ambiances\Gachai_Amb_Chambre_Radiator_LP
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Gahca_Amb_Fireplace_Endgame_LP
+      guid: 65c4c7fa9e376646b952ebac8cc1ffb8
+      id: 1508409857
+      PathAndIcons:
+      - ElementName: Gacha2019
+        ObjectType: 12
+      - ElementName: Ambiances
+        ObjectType: 4
+      - ElementName: Gahca_Amb_Fireplace_Endgame_LP
+        ObjectType: 3
+      Path: Gacha2019\Ambiances\Gahca_Amb_Fireplace_Endgame_LP
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 427f63c87dd8304f8aedfbed212364dd
+    GuidInternal: 
+    m_lastTime: -8586463603050266284
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 5cf36dbc9904664b83bbcfff1c02cd35
+    GuidInternal: 
+    m_lastTime: -8586463603050163889
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 5418e5948409864380ff3e266eac1833
+    GuidInternal: 
+    m_lastTime: -8586463599901752844
+    List:
+    - name: Texture
+      guid: f2a8830b15ff8948beebd14803ef23a7
+      id: 2460634474
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Texture
+        ObjectType: 11
+      Path: Default Work Unit\Texture
+      values:
+      - name: Carpet
+        guid: 12a0ac43b6971e46bc6b85d65d8d1615
+        id: 2412606308
+        PathAndIcons:
+        - ElementName: Carpet
+          ObjectType: 10
+      - name: Wood
+        guid: 26e40be13ba2074aa25a398d7e3d1b52
+        id: 2058049674
+        PathAndIcons:
+        - ElementName: Wood
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 5ba3c9850b6aad4592d619425f2c985c
+    GuidInternal: 
+    m_lastTime: -8586463603050144680
+    List: []
+  ExpandedItems:
+  - /GACHA2019_WwiseProject
+  - /GACHA2019_WwiseProject/Events
+  - /GACHA2019_WwiseProject/Events/Gacha2019
+  - /GACHA2019_WwiseProject/Events/Gacha2019/Ambiances
+  - /GACHA2019_WwiseProject/Events/Gacha2019/UI Menu
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
