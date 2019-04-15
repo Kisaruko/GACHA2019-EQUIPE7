@@ -6,14 +6,19 @@
 				<SoundBank Name="Gacha_2019_Soundbank" ID="{42BA3C98-1D3F-4CEA-A092-22101AD7837D}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Gacha_Objects_Pendulum_Timer_Normal_LP" ID="{7B70D0C1-D552-4174-9FE5-6A6A2D809879}" WorkUnitID="{15EBC658-44A7-40B6-AA9E-EC40A892BED9}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Gacha_Pickup_Grab_OUT_OS" ID="{597B7276-8E8E-41E7-BCF2-2400F78187B3}" WorkUnitID="{15EBC658-44A7-40B6-AA9E-EC40A892BED9}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Gacha_UI_Menu_Openmenu_SFX" ID="{E9D60F24-0B28-428A-8619-C8BDE9EC26D4}" WorkUnitID="{15EBC658-44A7-40B6-AA9E-EC40A892BED9}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Gacha_FX_Pickup_Keys_Held_OS" ID="{A57A9D20-167B-42F5-B7EF-820E4AFCE4AC}" WorkUnitID="{15EBC658-44A7-40B6-AA9E-EC40A892BED9}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Gacha_FX_Pickup_Padlock_OS" ID="{9E33A273-1ED1-43DD-8A66-1B97FB37D751}" WorkUnitID="{15EBC658-44A7-40B6-AA9E-EC40A892BED9}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Gacha_Musique_Radio_RC" ID="{CE7D38B9-4E39-4405-8427-E357BFFCEB9B}" WorkUnitID="{15EBC658-44A7-40B6-AA9E-EC40A892BED9}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Gacha_Amb_Objects_Pendulum_Death_OS" ID="{A3F82321-3520-4429-8BC5-6ADE96414CB2}" WorkUnitID="{15EBC658-44A7-40B6-AA9E-EC40A892BED9}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Gacha_Enigme_Revelation_Tableau_OS_TP" ID="{EC4395B6-AAD4-4537-AC6A-284FC08BC18F}" WorkUnitID="{15EBC658-44A7-40B6-AA9E-EC40A892BED9}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Gahca_Amb_Fireplace_Endgame_LP" ID="{FAC7C465-379E-4666-B952-EBAC8CC1FFB8}" WorkUnitID="{15EBC658-44A7-40B6-AA9E-EC40A892BED9}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Gacha_Amb_Feedback_Full_Complete_LP_PH" ID="{B2ED4475-92DF-467F-BC91-C9AF79FE2371}" WorkUnitID="{15EBC658-44A7-40B6-AA9E-EC40A892BED9}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Gacha_Enigme_Babycry_LP" ID="{3DA1FF2F-026C-46F2-ADA4-19D339F8A928}" WorkUnitID="{15EBC658-44A7-40B6-AA9E-EC40A892BED9}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Gacha_Amb_city_exterieure_LP" ID="{513745C8-C0BA-4719-ADF9-FD04E0D27E53}" WorkUnitID="{15EBC658-44A7-40B6-AA9E-EC40A892BED9}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Gachai_Amb_Chambre_Radiator_LP" ID="{095398E9-8CE3-4722-BD99-2E7C019F8C2A}" WorkUnitID="{15EBC658-44A7-40B6-AA9E-EC40A892BED9}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Gacha_Pickups_Grab_IN_OS" ID="{AE459E72-70FF-49DE-BCEF-8001D3779E8C}" WorkUnitID="{15EBC658-44A7-40B6-AA9E-EC40A892BED9}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Gacha_Ambi_General_Apartment_LP" ID="{24400C05-F8A8-49F0-94C1-A248BA66BCD7}" WorkUnitID="{15EBC658-44A7-40B6-AA9E-EC40A892BED9}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Gacha_Char_FTPS_Switchcontainer" ID="{2BBC6F06-7423-4A2C-BC8D-CBE5CF3E60F6}" WorkUnitID="{15EBC658-44A7-40B6-AA9E-EC40A892BED9}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Gacha_UI_Menu_Getting_Out_RC" ID="{D4E6754A-9942-4AD5-87EA-72E9D0FCF1C4}" WorkUnitID="{15EBC658-44A7-40B6-AA9E-EC40A892BED9}" Filter="7" Origin="Manual"/>

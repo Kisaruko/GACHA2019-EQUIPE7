@@ -241,7 +241,80 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Folder Name="Enigmes" ID="{C0237B81-00C4-4D0E-BAE5-86783D4B891F}" ShortID="222823126"/>
+				<Folder Name="Enigmes" ID="{C0237B81-00C4-4D0E-BAE5-86783D4B891F}" ShortID="222823126">
+					<ChildrenList>
+						<Event Name="Gacha_FX_Pickup_Keys_Held_OS" ID="{A57A9D20-167B-42F5-B7EF-820E4AFCE4AC}">
+							<ChildrenList>
+								<Action Name="" ID="{8A26CB70-5FF8-4D01-9E34-2D882CE6F194}" ShortID="201976903">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Gacha_FX_Pickup_Keys_Held_OS" ID="{A09E20E9-DD1E-486B-9658-1BAFAF57F65F}" WorkUnitID="{77135A00-2559-45FA-BCFA-CB2B30857223}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Gacha_Pickups_Grab_IN_OS" ID="{AE459E72-70FF-49DE-BCEF-8001D3779E8C}">
+							<ChildrenList>
+								<Action Name="" ID="{4CDF5CB9-FA00-40C3-8838-C03114396971}" ShortID="97602836">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Gacha_Pickups_Grab_IN_OS" ID="{755A1BA2-E0A7-4D54-96A2-AA9434ED940A}" WorkUnitID="{77135A00-2559-45FA-BCFA-CB2B30857223}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Gacha_Pickup_Grab_OUT_OS" ID="{597B7276-8E8E-41E7-BCF2-2400F78187B3}">
+							<ChildrenList>
+								<Action Name="" ID="{2C5975B0-BEF3-4613-A70F-AB906EA09F35}" ShortID="1025538626">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Gacha_Pickup_Grab_OUT_OS" ID="{C629A4F2-8362-4900-8941-980AF533C502}" WorkUnitID="{77135A00-2559-45FA-BCFA-CB2B30857223}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Gacha_Enigme_Revelation_Tableau_OS_TP" ID="{EC4395B6-AAD4-4537-AC6A-284FC08BC18F}">
+							<ChildrenList>
+								<Action Name="" ID="{40FB95BE-895A-48B7-A1BF-8EECFC88A209}" ShortID="203775248">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Gacha_Enigme_Revelation_Tableau_OS_TP" ID="{4E96544E-3D9F-418A-8134-684E54B2C10A}" WorkUnitID="{77135A00-2559-45FA-BCFA-CB2B30857223}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Gacha_Enigme_Babycry_LP" ID="{3DA1FF2F-026C-46F2-ADA4-19D339F8A928}">
+							<ChildrenList>
+								<Action Name="" ID="{B0EEF761-1BDA-45DA-AA00-76173CA294B6}" ShortID="946504269">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Gacha_Enigme_Babycry_LP" ID="{923FD9C8-8FDF-401F-90EF-3026048F0FC8}" WorkUnitID="{77135A00-2559-45FA-BCFA-CB2B30857223}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 				<Event Name="Gacha_FX_Pickup_Padlock_Rolling_OS" ID="{78E2E061-FEF6-4C23-893B-FD89C2F4EAFE}">
 					<ChildrenList>
 						<Action Name="" ID="{2F99AE44-05C8-48B9-B4B9-5D9675013BE2}" ShortID="278711571">

@@ -24,14 +24,19 @@
 				<Event Id="2701662840" Name="Gacha_Amb_city_exterieure_LP" ObjectPath="\Events\Gacha2019\Ambiances\Gacha_Amb_city_exterieure_LP" MaxAttenuation="100.000000"/>
 				<Event Id="648737712" Name="Gacha_Amb_Cuisine_Frigo_LP" ObjectPath="\Events\Gacha2019\Ambiances\Gacha_Amb_Cuisine_Frigo_LP" MaxAttenuation="20.000000"/>
 				<Event Id="374124454" Name="Gacha_Amb_Feedback_Full_Complete_LP_PH" ObjectPath="\Events\Gacha2019\Ambiances\Gacha_Amb_Feedback_Full_Complete_LP_PH"/>
-				<Event Id="1831861089" Name="Gacha_Amb_Object_Pendulum_Last_10_seconds_OS" ObjectPath="\Events\Gacha2019\Gacha_Amb_Object_Pendulum_Last_10_seconds_OS"/>
+				<Event Id="1831861089" Name="Gacha_Amb_Object_Pendulum_Last_10_seconds_OS" ObjectPath="\Events\Gacha2019\Gacha_Amb_Object_Pendulum_Last_10_seconds_OS" MaxAttenuation="100.000000"/>
 				<Event Id="600392946" Name="Gacha_Amb_Objects_Pendulum_Death_OS" ObjectPath="\Events\Gacha2019\Gacha_Amb_Objects_Pendulum_Death_OS" MaxAttenuation="100.000000"/>
 				<Event Id="2948500498" Name="Gacha_Ambi_General_Apartment_LP" ObjectPath="\Events\Gacha2019\Ambiances\Gacha_Ambi_General_Apartment_LP"/>
 				<Event Id="2571062478" Name="Gacha_Char_FTPS_Switchcontainer" ObjectPath="\Events\Gacha2019\Gacha_Char_FTPS_Switchcontainer"/>
+				<Event Id="856616089" Name="Gacha_Enigme_Babycry_LP" ObjectPath="\Events\Gacha2019\Enigmes\Gacha_Enigme_Babycry_LP"/>
+				<Event Id="836035114" Name="Gacha_Enigme_Revelation_Tableau_OS_TP" ObjectPath="\Events\Gacha2019\Enigmes\Gacha_Enigme_Revelation_Tableau_OS_TP"/>
+				<Event Id="468214123" Name="Gacha_FX_Pickup_Keys_Held_OS" ObjectPath="\Events\Gacha2019\Enigmes\Gacha_FX_Pickup_Keys_Held_OS"/>
 				<Event Id="883481547" Name="Gacha_FX_Pickup_Padlock_OS" ObjectPath="\Events\Gacha2019\Gacha_FX_Pickup_Padlock_OS"/>
 				<Event Id="158832197" Name="Gacha_FX_Pickup_Padlock_Rolling_OS" ObjectPath="\Events\Gacha2019\Gacha_FX_Pickup_Padlock_Rolling_OS"/>
 				<Event Id="1471087201" Name="Gacha_Musique_Radio_RC" ObjectPath="\Events\Gacha2019\Ambiances\Gacha_Musique_Radio_RC" MaxAttenuation="100.000000"/>
-				<Event Id="917303546" Name="Gacha_Objects_Pendulum_Timer_Normal_LP" ObjectPath="\Events\Gacha2019\Ambiances\Gacha_Objects_Pendulum_Timer_Normal_LP"/>
+				<Event Id="917303546" Name="Gacha_Objects_Pendulum_Timer_Normal_LP" ObjectPath="\Events\Gacha2019\Ambiances\Gacha_Objects_Pendulum_Timer_Normal_LP" MaxAttenuation="100.000000"/>
+				<Event Id="2947212425" Name="Gacha_Pickup_Grab_OUT_OS" ObjectPath="\Events\Gacha2019\Enigmes\Gacha_Pickup_Grab_OUT_OS"/>
+				<Event Id="1864408839" Name="Gacha_Pickups_Grab_IN_OS" ObjectPath="\Events\Gacha2019\Enigmes\Gacha_Pickups_Grab_IN_OS"/>
 				<Event Id="546934229" Name="Gacha_UI_Menu_Closingmenu_SFX" ObjectPath="\Events\Gacha2019\UI Menu\Gacha_UI_Menu_Closingmenu_SFX"/>
 				<Event Id="2481369869" Name="Gacha_UI_Menu_Entering_Section_RC" ObjectPath="\Events\Gacha2019\UI Menu\Gacha_UI_Menu_Entering_Section_RC"/>
 				<Event Id="2698804590" Name="Gacha_UI_Menu_Getting_Out_RC" ObjectPath="\Events\Gacha2019\UI Menu\Gacha_UI_Menu_Getting_Out_RC"/>
@@ -43,6 +48,10 @@
 				<File Id="6166331" Language="SFX">
 					<ShortName>Gacha_UI_Menu_Entering_Option_SFX_05.wav</ShortName>
 					<Path>SFX\Gacha_UI_Menu_Entering_Option_SFX_05_56D34C19.wem</Path>
+				</File>
+				<File Id="8968465" Language="SFX">
+					<ShortName>Gacha_Enigme_Babycry_LP.wav</ShortName>
+					<Path>SFX\Gacha_Enigme_Babycry_LP_8956FC97.wem</Path>
 				</File>
 				<File Id="31465698" Language="SFX">
 					<ShortName>Gachai_Amb_Chambre_Radiator_LP.wav</ShortName>
@@ -60,6 +69,10 @@
 					<ShortName>Gacha_Char_FTPS_Wood_OS_02.wav</ShortName>
 					<Path>SFX\Gacha_Char_FTPS_Wood_OS_02_E21BF20A.wem</Path>
 				</File>
+				<File Id="75796758" Language="SFX">
+					<ShortName>Gacha_FX_Pickup_Keys_Held_OS.wav</ShortName>
+					<Path>SFX\Gacha_FX_Pickup_Keys_Held_OS_56D34C19.wem</Path>
+				</File>
 				<File Id="77473301" Language="SFX">
 					<ShortName>Gacha_UI_Menu_Sortie_SFX_01.wav</ShortName>
 					<Path>SFX\Gacha_UI_Menu_Sortie_SFX_01_56D34C19.wem</Path>
@@ -75,6 +88,10 @@
 				<File Id="258170629" Language="SFX">
 					<ShortName>Gacha_FX_Pickup_Padlock_Rolling_OS.wav</ShortName>
 					<Path>SFX\Gacha_FX_Pickup_Padlock_Rolling_OS_56D34C19.wem</Path>
+				</File>
+				<File Id="258673082" Language="SFX">
+					<ShortName>Gacha_Pickup_Grab_OUT_OS.wav</ShortName>
+					<Path>SFX\Gacha_Pickup_Grab_OUT_OS_56D34C19.wem</Path>
 				</File>
 				<File Id="267741288" Language="SFX">
 					<ShortName>Gacha_UI_Menu_Entering_Option_SFX_01.wav</ShortName>
@@ -156,9 +173,17 @@
 					<ShortName>Gacha_Music_Chopin_etude_25_Soundtrack.wav</ShortName>
 					<Path>SFX\Gacha_Music_Chopin_etude_25_Soundtrack_56D34C19.wem</Path>
 				</File>
+				<File Id="951027946" Language="SFX">
+					<ShortName>Gacha_Enigme_Revelation_Tableau_OS_TP.wav</ShortName>
+					<Path>SFX\Gacha_Enigme_Revelation_Tableau_OS_TP_56D34C19.wem</Path>
+				</File>
 				<File Id="961501280" Language="SFX">
 					<ShortName>Gacha_UI_Menu_Sortie_SFX_02.wav</ShortName>
 					<Path>SFX\Gacha_UI_Menu_Sortie_SFX_02_56D34C19.wem</Path>
+				</File>
+				<File Id="1031116032" Language="SFX">
+					<ShortName>Gacha_Pickups_Grab_IN_OS.wav</ShortName>
+					<Path>SFX\Gacha_Pickups_Grab_IN_OS_56D34C19.wem</Path>
 				</File>
 				<File Id="1033666463" Language="SFX">
 					<ShortName>Gacha_Amb_Object_Pendulum_Last_10_seconds_OS.wav</ShortName>

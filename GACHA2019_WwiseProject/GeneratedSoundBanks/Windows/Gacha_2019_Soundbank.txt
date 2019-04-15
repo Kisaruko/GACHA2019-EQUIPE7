@@ -1,32 +1,40 @@
 Event	ID	Name			Wwise Object Path	Notes
 	158832197	Gacha_FX_Pickup_Padlock_Rolling_OS			\Gacha2019\Gacha_FX_Pickup_Padlock_Rolling_OS	
 	374124454	Gacha_Amb_Feedback_Full_Complete_LP_PH			\Gacha2019\Ambiances\Gacha_Amb_Feedback_Full_Complete_LP_PH	
+	468214123	Gacha_FX_Pickup_Keys_Held_OS			\Gacha2019\Enigmes\Gacha_FX_Pickup_Keys_Held_OS	
 	546934229	Gacha_UI_Menu_Closingmenu_SFX			\Gacha2019\UI Menu\Gacha_UI_Menu_Closingmenu_SFX	
 	600392946	Gacha_Amb_Objects_Pendulum_Death_OS			\Gacha2019\Gacha_Amb_Objects_Pendulum_Death_OS	
 	648737712	Gacha_Amb_Cuisine_Frigo_LP			\Gacha2019\Ambiances\Gacha_Amb_Cuisine_Frigo_LP	
+	836035114	Gacha_Enigme_Revelation_Tableau_OS_TP			\Gacha2019\Enigmes\Gacha_Enigme_Revelation_Tableau_OS_TP	
+	856616089	Gacha_Enigme_Babycry_LP			\Gacha2019\Enigmes\Gacha_Enigme_Babycry_LP	
 	883481547	Gacha_FX_Pickup_Padlock_OS			\Gacha2019\Gacha_FX_Pickup_Padlock_OS	
 	917303546	Gacha_Objects_Pendulum_Timer_Normal_LP			\Gacha2019\Ambiances\Gacha_Objects_Pendulum_Timer_Normal_LP	
 	1471087201	Gacha_Musique_Radio_RC			\Gacha2019\Ambiances\Gacha_Musique_Radio_RC	
 	1508409857	Gahca_Amb_Fireplace_Endgame_LP			\Gacha2019\Ambiances\Gahca_Amb_Fireplace_Endgame_LP	
 	1831861089	Gacha_Amb_Object_Pendulum_Last_10_seconds_OS			\Gacha2019\Gacha_Amb_Object_Pendulum_Last_10_seconds_OS	
+	1864408839	Gacha_Pickups_Grab_IN_OS			\Gacha2019\Enigmes\Gacha_Pickups_Grab_IN_OS	
 	2481369869	Gacha_UI_Menu_Entering_Section_RC			\Gacha2019\UI Menu\Gacha_UI_Menu_Entering_Section_RC	
 	2571062478	Gacha_Char_FTPS_Switchcontainer			\Gacha2019\Gacha_Char_FTPS_Switchcontainer	
 	2698804590	Gacha_UI_Menu_Getting_Out_RC			\Gacha2019\UI Menu\Gacha_UI_Menu_Getting_Out_RC	
 	2701662840	Gacha_Amb_city_exterieure_LP			\Gacha2019\Ambiances\Gacha_Amb_city_exterieure_LP	
+	2947212425	Gacha_Pickup_Grab_OUT_OS			\Gacha2019\Enigmes\Gacha_Pickup_Grab_OUT_OS	
 	2948500498	Gacha_Ambi_General_Apartment_LP			\Gacha2019\Ambiances\Gacha_Ambi_General_Apartment_LP	
 	3911249542	Gacha_UI_Menu_Openmenu_SFX			\Gacha2019\UI Menu\Gacha_UI_Menu_Openmenu_SFX	
 	4100535446	Gachai_Amb_Chambre_Radiator_LP			\Gacha2019\Ambiances\Gachai_Amb_Chambre_Radiator_LP	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	6166331	Gacha_UI_Menu_Entering_Option_SFX_05	D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\.cache\Windows\SFX\Gacha_UI_Menu_Entering_Option_SFX_05_56D34C19.wem		\Actor-Mixer Hierarchy\UI\Gacha_UI_Menu_Entering_Section_RC\Gacha_UI_Menu_Entering_Option_SFX_05		77760
+	8968465	Gacha_Enigme_Babycry_LP	D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\.cache\Windows\SFX\Gacha_Enigme_Babycry_LP_8956FC97.wem		\Actor-Mixer Hierarchy\SFX\Enigmes\Gacha_Enigme_Babycry_LP		4280240
 	31465698	Gachai_Amb_Chambre_Radiator_LP	D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\.cache\Windows\SFX\Gachai_Amb_Chambre_Radiator_LP_8956FC97.wem		\Actor-Mixer Hierarchy\Ambiances\Loops\Gachai_Amb_Chambre_Radiator_LP		7803136
 	41147683	Gacha_Char_FTPS_Wood_OS_03	D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\.cache\Windows\SFX\Gacha_Char_FTPS_Wood_OS_03_481BF3C1.wem		\Actor-Mixer Hierarchy\Character\Gacha_Char_FTPS_Wood\Gacha_Char_FTPS_Wood_OS_03		61860
 	45124566	Gacha_Char_FTPS_Wood_OS_05	D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\.cache\Windows\SFX\Gacha_Char_FTPS_Wood_OS_05_807B5AFD.wem		\Actor-Mixer Hierarchy\Character\Gacha_Char_FTPS_Wood\Gacha_Char_FTPS_Wood_OS_05		57640
 	62694900	Gacha_Char_FTPS_Wood_OS_02	D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\.cache\Windows\SFX\Gacha_Char_FTPS_Wood_OS_02_E21BF20A.wem		\Actor-Mixer Hierarchy\Character\Gacha_Char_FTPS_Wood\Gacha_Char_FTPS_Wood_OS_02		60816
+	75796758	Gacha_FX_Pickup_Keys_Held_OS	D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\.cache\Windows\SFX\Gacha_FX_Pickup_Keys_Held_OS_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\Pickups\Gacha_FX_Pickup_Keys_Held_OS		128576
 	77473301	Gacha_UI_Menu_Sortie_SFX_01	D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\.cache\Windows\SFX\Gacha_UI_Menu_Sortie_SFX_01_56D34C19.wem		\Actor-Mixer Hierarchy\UI\Gacha_UI_Menu_Getting_Out_RC\Gacha_UI_Menu_Sortie_SFX_01		116224
 	124351511	Gacha_UI_Menu_Sortie_SFX_03	D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\.cache\Windows\SFX\Gacha_UI_Menu_Sortie_SFX_03_56D34C19.wem		\Actor-Mixer Hierarchy\UI\Gacha_UI_Menu_Getting_Out_RC\Gacha_UI_Menu_Sortie_SFX_03		98368
 	225918998	Gacha_Char_FTPS_Wood_OS_04	D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\.cache\Windows\SFX\Gacha_Char_FTPS_Wood_OS_04_A473ABD9.wem		\Actor-Mixer Hierarchy\Character\Gacha_Char_FTPS_Wood\Gacha_Char_FTPS_Wood_OS_04		59300
 	258170629	Gacha_FX_Pickup_Padlock_Rolling_OS	D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\.cache\Windows\SFX\Gacha_FX_Pickup_Padlock_Rolling_OS_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\Gacha_FX_Pickup_Padlock_Rolling_OS		16068
+	258673082	Gacha_Pickup_Grab_OUT_OS	D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\.cache\Windows\SFX\Gacha_Pickup_Grab_OUT_OS_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\Pickups\Gacha_Pickup_Grab_OUT_OS		58944
 	267741288	Gacha_UI_Menu_Entering_Option_SFX_01	D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\.cache\Windows\SFX\Gacha_UI_Menu_Entering_Option_SFX_01_56D34C19.wem		\Actor-Mixer Hierarchy\UI\Gacha_UI_Menu_Entering_Section_RC\Gacha_UI_Menu_Entering_Option_SFX_01		59456
 	282996542	Gacha_UI_Menu_Entering_Option_SFX_02	D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\.cache\Windows\SFX\Gacha_UI_Menu_Entering_Option_SFX_02_56D34C19.wem		\Actor-Mixer Hierarchy\UI\Gacha_UI_Menu_Entering_Section_RC\Gacha_UI_Menu_Entering_Option_SFX_02		115392
 	367073282	Gacha_UI_Menu_Entering_Option_SFX_04	D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\.cache\Windows\SFX\Gacha_UI_Menu_Entering_Option_SFX_04_56D34C19.wem		\Actor-Mixer Hierarchy\UI\Gacha_UI_Menu_Entering_Section_RC\Gacha_UI_Menu_Entering_Option_SFX_04		86080
@@ -47,6 +55,8 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	849080494	Gacha_Amb_city_exterieure_LP	D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\.cache\Windows\SFX\Gacha_Amb_city_exterieure_LP_8956FC97.wem		\Actor-Mixer Hierarchy\Ambiances\Loops\Gacha_Amb_city_exterieure_LP		5963840
 	888092220	Gacha_Amb_Object_Pendulum_Death_SFX	D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\.cache\Windows\SFX\Gacha_Amb_Object_Pendulum_Death_SFX_56D34C19.wem		\Actor-Mixer Hierarchy\Ambiances\Ambiance objects\Gacha_Amb_Object_Pendulum_Death_SFX		2511808
 	888339673	Gacha_Music_Chopin_etude_25_Soundtrack	D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\.cache\Windows\SFX\Gacha_Music_Chopin_etude_25_Soundtrack_56D34C19.wem		\Actor-Mixer Hierarchy\Ambiances\Musique\Gacha_Musique_Radio_RC\Gacha_Music_Chopin_etude_25_Soundtrack		42862656
+	951027946	Gacha_Enigme_Revelation_Tableau_OS_TP	D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\.cache\Windows\SFX\Gacha_Enigme_Revelation_Tableau_OS_TP_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\Enigmes\Gacha_Enigme_Revelation_Tableau_OS_TP		859136
 	961501280	Gacha_UI_Menu_Sortie_SFX_02	D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\.cache\Windows\SFX\Gacha_UI_Menu_Sortie_SFX_02_56D34C19.wem		\Actor-Mixer Hierarchy\UI\Gacha_UI_Menu_Getting_Out_RC\Gacha_UI_Menu_Sortie_SFX_02		91200
+	1031116032	Gacha_Pickups_Grab_IN_OS	D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\.cache\Windows\SFX\Gacha_Pickups_Grab_IN_OS_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\Pickups\Gacha_Pickups_Grab_IN_OS		53440
 	1033666463	Gacha_Amb_Object_Pendulum_Last_10_seconds_OS	D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\.cache\Windows\SFX\Gacha_Amb_Object_Pendulum_Last_10_seconds_OS_C193A904.wem		\Actor-Mixer Hierarchy\Ambiances\Loops\Last tik tak\Tak\Gacha_Amb_Object_Pendulum_Last_10_seconds_OS		191928
 

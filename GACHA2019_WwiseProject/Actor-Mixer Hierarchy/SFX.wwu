@@ -55,6 +55,44 @@
 								<ActiveSource Name="Gacha_FX_Pickup_Keys_Held_OS" ID="{5EC34203-895F-49E5-9325-CA1E6B6D7740}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="Gacha_Pickup_Grab_OUT_OS" ID="{C629A4F2-8362-4900-8941-980AF533C502}" ShortID="331019118">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Gacha_Pickup_Grab_OUT_OS" ID="{F98793EF-C524-4CB7-B5C6-A165AC0BFB84}" ShortID="258673082">
+									<Language>SFX</Language>
+									<AudioFile>Gacha_Pickup_Grab_OUT_OS.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Gacha_Pickup_Grab_OUT_OS" ID="{F98793EF-C524-4CB7-B5C6-A165AC0BFB84}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Gacha_Pickups_Grab_IN_OS" ID="{755A1BA2-E0A7-4D54-96A2-AA9434ED940A}" ShortID="926351704">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Gacha_Pickups_Grab_IN_OS" ID="{8168117D-2B4B-42C2-8B4A-3582354DA14F}" ShortID="1031116032">
+									<Language>SFX</Language>
+									<AudioFile>Gacha_Pickups_Grab_IN_OS.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Gacha_Pickups_Grab_IN_OS" ID="{8168117D-2B4B-42C2-8B4A-3582354DA14F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 				<Sound Name="Gacha_FX_Pickup_Padlock_OS" ID="{A71A0AC3-EF01-43A6-A2D0-25E608FE17CD}" ShortID="171691680">
