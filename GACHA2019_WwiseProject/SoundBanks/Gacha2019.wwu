@@ -9,6 +9,7 @@
 						<ObjectRef Name="Gacha_UI_Menu_Openmenu_SFX" ID="{E9D60F24-0B28-428A-8619-C8BDE9EC26D4}" WorkUnitID="{15EBC658-44A7-40B6-AA9E-EC40A892BED9}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Gacha_FX_Pickup_Padlock_OS" ID="{9E33A273-1ED1-43DD-8A66-1B97FB37D751}" WorkUnitID="{15EBC658-44A7-40B6-AA9E-EC40A892BED9}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Gacha_Musique_Radio_RC" ID="{CE7D38B9-4E39-4405-8427-E357BFFCEB9B}" WorkUnitID="{15EBC658-44A7-40B6-AA9E-EC40A892BED9}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Gacha_Amb_Objects_Pendulum_Death_OS" ID="{A3F82321-3520-4429-8BC5-6ADE96414CB2}" WorkUnitID="{15EBC658-44A7-40B6-AA9E-EC40A892BED9}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Gahca_Amb_Fireplace_Endgame_LP" ID="{FAC7C465-379E-4666-B952-EBAC8CC1FFB8}" WorkUnitID="{15EBC658-44A7-40B6-AA9E-EC40A892BED9}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Gacha_Amb_Feedback_Full_Complete_LP_PH" ID="{B2ED4475-92DF-467F-BC91-C9AF79FE2371}" WorkUnitID="{15EBC658-44A7-40B6-AA9E-EC40A892BED9}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Gacha_Amb_city_exterieure_LP" ID="{513745C8-C0BA-4719-ADF9-FD04E0D27E53}" WorkUnitID="{15EBC658-44A7-40B6-AA9E-EC40A892BED9}" Filter="7" Origin="Manual"/>

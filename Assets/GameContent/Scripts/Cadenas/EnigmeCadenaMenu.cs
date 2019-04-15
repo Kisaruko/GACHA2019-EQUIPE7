@@ -79,6 +79,9 @@ public class EnigmeCadenaMenu : MonoBehaviour
                     objSelected.GetComponent<NumberCadena>().number += 1;
                 }
                 else { objSelected.GetComponent<NumberCadena>().number = 0; }
+
+                //
+                AkSoundEngine.PostEvent("Gacha_FX_Pickup_Padlock_OS", gameObject);
             }
             catch (Exception)
             {
@@ -96,6 +99,9 @@ public class EnigmeCadenaMenu : MonoBehaviour
                     objSelected.GetComponent<NumberCadena>().number -= 1;
                 }
                 else { objSelected.GetComponent<NumberCadena>().number = 9; }
+
+                //
+                AkSoundEngine.PostEvent("Gacha_FX_Pickup_Padlock_Rolling_OS", gameObject);
                 
             }
             catch (Exception)
@@ -108,6 +114,9 @@ public class EnigmeCadenaMenu : MonoBehaviour
         
 
     }
+
+
+
     private void Start()
     {
         currentCamera = FindObjectOfType<Camera>();

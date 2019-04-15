@@ -37,7 +37,7 @@
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Wood" ID="{E10BE426-A23B-4A07-A25A-398D7E3D1B52}"/>
+						<CurrentSwitchRef Name="Carpet" ID="{43ACA012-97B6-461E-BC6B-85D65D8D1615}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
