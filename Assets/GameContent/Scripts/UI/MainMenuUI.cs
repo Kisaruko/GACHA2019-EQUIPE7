@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -9,6 +10,8 @@ public class MainMenuUI : MonoBehaviour
     #region Attributes
 
     [SerializeField] private CanvasGroup _startActivePanel = null;
+    public Dropdown colorBlindDropdown;
+    public GameObject cadenas;
 
     #endregion
 
@@ -24,9 +27,23 @@ public class MainMenuUI : MonoBehaviour
         {
             SetCurrentActivePannel(_startActivePanel);
         }
+        PopulateColorBlindMode();
+    }
+
+    private void Update()
+    {
+        SetSettings();
     }
 
     #endregion
+
+    private void PopulateColorBlindMode()
+    {
+        string[] colorBlindNames = Enum.GetNames(typeof(ColorBlindMode));
+        List<string> names = new List<string>(colorBlindNames);
+
+        colorBlindDropdown.AddOptions(names);
+    }
 
     #region Public 
 
@@ -38,6 +55,11 @@ public class MainMenuUI : MonoBehaviour
     public void LoadScene(string scene)
     {
         SceneManager.LoadScene(scene);
+    }
+
+    public void SetSettings()
+    {
+        AllManager.Instance.colorBlindEnumIndex = colorBlindDropdown.value;
     }
 
 
@@ -60,6 +82,11 @@ public class MainMenuUI : MonoBehaviour
         panel.alpha = 1;
         panel.interactable = true;
         panel.blocksRaycasts = true;
+    }
+
+    public void SetCadenasActive()
+    {
+        cadenas.SetActive(!cadenas.activeSelf);
     }
 
     /// <summary>

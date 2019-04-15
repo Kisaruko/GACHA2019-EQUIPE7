@@ -7,9 +7,7 @@ public class AllManager : MonoBehaviour
     public static AllManager Instance;
     public bool[] Matriochka = new bool[7];
 
-    // Start is called before the first frame update
-
-
+    public int colorBlindEnumIndex;
 
     private void Awake()
     {
@@ -20,11 +18,4 @@ public class AllManager : MonoBehaviour
         if (Instance) DestroyImmediate(Instance);
         Instance = this;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
 }
