@@ -248,7 +248,7 @@ MonoBehaviour:
   isCrouch: 0
   canLook: 1
   speedMove: 3
-  speedLook: 0.8
+  speedLook: 0.9
   lookYMaxAngle: 60
   lookYMinAngle: -60
   moveHorizontalAxis: Horizontal
