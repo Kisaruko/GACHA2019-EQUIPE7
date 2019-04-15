@@ -1,0 +1,755 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3580B36E-9CB1-40A8-AE7A-09126A779563}" SchemaVersion="89">
+	<AudioObjects>
+		<WorkUnit Name="Ambiances" ID="{3580B36E-9CB1-40A8-AE7A-09126A779563}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Loops" ID="{CD68875B-310A-4724-AB11-FBD10EEE6CF3}" ShortID="217641643">
+					<ChildrenList>
+						<Sound Name="Gachai_Amb_Chambre_Radiator_LP" ID="{FC309D81-188C-41F6-A329-BE23567C5255}" ShortID="876175030">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Gachai_Amb_Chambre_Radiator_LP" ID="{34E42C02-2A1E-4F95-88AB-DC918418322C}" ShortID="31465698">
+									<Language>SFX</Language>
+									<AudioFile>Gachai_Amb_Chambre_Radiator_LP.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Gachai_Amb_Chambre_Radiator_LP" ID="{34E42C02-2A1E-4F95-88AB-DC918418322C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Gacha_Amb_Cuisine_Frigo_LP" ID="{50820B3D-9E6E-443E-8000-616EA6719D2C}" ShortID="804776470">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<Custom>
+										<Attenuation Name="Attenuation (Custom)" ID="{B08903FE-9308-42BB-AB72-4309F2D85146}" ShortID="60825002">
+											<PropertyList>
+												<Property Name="RadiusMax" Type="Real64" Value="20"/>
+											</PropertyList>
+											<CurveUsageInfoList>
+												<VolumeDryUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="VolumeDry" ID="{640FEC84-5720-4BF4-AB4D-80F5E9E0DCF2}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="3"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>20</XPos>
+																	<YPos>-200</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</VolumeDryUsage>
+												<VolumeWetGameUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetGameUsage>
+												<VolumeWetUserUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetUserUsage>
+												<LowPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</LowPassFilterUsage>
+												<HighPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</HighPassFilterUsage>
+												<SpreadUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</SpreadUsage>
+												<FocusUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</FocusUsage>
+											</CurveUsageInfoList>
+										</Attenuation>
+									</Custom>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Gacha_Amb_Cuisine_Frigo_LP" ID="{E0CF6C0B-0855-4010-BB88-8FF5A8C31F9E}" ShortID="762464735">
+									<Language>SFX</Language>
+									<AudioFile>Gacha_Amb_Cuisine_Frigo_LP.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Gacha_Amb_Cuisine_Frigo_LP" ID="{E0CF6C0B-0855-4010-BB88-8FF5A8C31F9E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Gacha_Ambi_General_Apartment_LP" ID="{AEB74396-3E2E-49CB-AB63-BC530F107E74}" ShortID="291214357">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Gacha_Ambi_General_Apartment_LP" ID="{1D8EA490-F1F9-4E5F-BC30-D50678409C0F}" ShortID="468950104">
+									<Language>SFX</Language>
+									<AudioFile>Gacha_Ambi_General_Apartment_LP.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Gacha_Ambi_General_Apartment_LP" ID="{1D8EA490-F1F9-4E5F-BC30-D50678409C0F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Gacha_Objects_Pendulum_Timer_Normal_LP" ID="{6F3CC018-4A0A-47BC-958A-F29FF98B43F0}" ShortID="98925759">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Gacha_Objects_Pendulum_Timer_Normal_LP" ID="{70C78AB5-582E-4B7D-8DD2-499BA94AF38F}" ShortID="435775012">
+									<Language>SFX</Language>
+									<AudioFile>Gacha_Objects_Pendulum_Timer_Normal_LP.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Gacha_Objects_Pendulum_Timer_Normal_LP" ID="{70C78AB5-582E-4B7D-8DD2-499BA94AF38F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Gahca_Amb_Fireplace_Endgame_LP" ID="{16D9D7F2-3A1B-4015-952B-3D9E2C257FB8}" ShortID="795603917">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Gahca_Amb_Fireplace_Endgame_LP" ID="{8F1CC2D2-749C-44C3-809C-BD5EA4F53670}" ShortID="741055572">
+									<Language>SFX</Language>
+									<AudioFile>Gahca_Amb_Fireplace_Endgame_LP.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Gahca_Amb_Fireplace_Endgame_LP" ID="{8F1CC2D2-749C-44C3-809C-BD5EA4F53670}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Gacha_Amb_Object_Pendulum_Last_10_seconds_OS" ID="{1823E1D3-DFDF-4018-848B-F12ABF6D6225}" ShortID="155499310">
+							<PropertyList>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Gacha_Amb_Object_Pendulum_Last_10_seconds_OS" ID="{9D5E72C7-2CD6-4E9C-A5EC-3AF9E2C84FB1}" ShortID="700013861">
+									<Language>SFX</Language>
+									<AudioFile>Gacha_Amb_Object_Pendulum_Last_10_seconds_OS.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Gacha_Amb_Object_Pendulum_Last_10_seconds_OS" ID="{9D5E72C7-2CD6-4E9C-A5EC-3AF9E2C84FB1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Gacha_Amb_city_exterieure_LP" ID="{24163FF5-F142-4872-9CA6-9081D0C576B5}" ShortID="533135095">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="69"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<Custom CreatedFrom="{8EC20DB0-1B40-43AF-A0BE-EB8B68615599}">
+										<Attenuation Name="music attenuation (Custom)" ID="{9982AA05-8F66-4D5A-A9CF-76A3C45AC666}" ShortID="615121796">
+											<CurveUsageInfoList>
+												<VolumeDryUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="VolumeDry" ID="{6F2334E0-5089-47C7-B0EC-0432D444CFC4}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="3"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>100</XPos>
+																	<YPos>-200</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</VolumeDryUsage>
+												<VolumeWetGameUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetGameUsage>
+												<VolumeWetUserUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetUserUsage>
+												<LowPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None">
+														<Curve Name="LowPassFilter" ID="{4779371D-36F6-4141-8B7D-C36DB16F6810}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="65537"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>100</XPos>
+																	<YPos>100</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</LowPassFilterUsage>
+												<HighPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</HighPassFilterUsage>
+												<SpreadUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</SpreadUsage>
+												<FocusUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</FocusUsage>
+											</CurveUsageInfoList>
+										</Attenuation>
+									</Custom>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Gacha_Amb_city_exterieure_LP" ID="{B1A2A9E5-2715-41E1-849E-B307B97216F6}" ShortID="849080494">
+									<Language>SFX</Language>
+									<AudioFile>Gacha_Amb_city_exterieure_LP.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Gacha_Amb_city_exterieure_LP" ID="{B1A2A9E5-2715-41E1-849E-B307B97216F6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Gacha_Amb_Feedback_Full_Complete_LP_PH" ID="{C4689DA9-5677-42D0-AD46-F551709D6697}" ShortID="838994734">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Gacha_Amb_Feedback_Full_Complete_LP_PH" ID="{CA5B69BD-AA72-45BE-A364-B8CFE2FD7A8E}" ShortID="581821259">
+									<Language>SFX</Language>
+									<AudioFile>Gacha_Amb_Feedback_Full_Complete_LP_PH.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Gacha_Amb_Feedback_Full_Complete_LP_PH" ID="{CA5B69BD-AA72-45BE-A364-B8CFE2FD7A8E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Ambiance objects" ID="{6D5988FA-958B-4E2E-818D-840E85B71C85}" ShortID="595958371">
+					<ChildrenList>
+						<Sound Name="Gacha_FX_Object_Drawer_Closing_OS_01" ID="{3EACD516-E8BD-4C22-A76B-0FCAA4A9C875}" ShortID="79799681">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Gacha_FX_Object_Drawer_Closing_OS_01" ID="{1072B309-2943-4117-BA96-FD1DF85987EB}" ShortID="1053034588">
+									<Language>SFX</Language>
+									<AudioFile>Gacha_FX_Object_Drawer_Closing_OS_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Gacha_FX_Object_Drawer_Closing_OS_01" ID="{1072B309-2943-4117-BA96-FD1DF85987EB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Gacha_FX_Object_Drawer_Closing_OS_02" ID="{F88C8256-F858-4975-A042-252F961EB178}" ShortID="819900709">
+							<PropertyList>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Gacha_FX_Object_Drawer_Closing_OS_02" ID="{6622F68C-D39F-4063-B706-ABE9318B98E0}" ShortID="576490836">
+									<Language>SFX</Language>
+									<AudioFile>Gacha_FX_Object_Drawer_Closing_OS_02.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Gacha_FX_Object_Drawer_Closing_OS_02" ID="{6622F68C-D39F-4063-B706-ABE9318B98E0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Gacha_FX_Object_Drawer_Closing_OS_03" ID="{161660F0-912F-408A-A974-48AC39A50CA6}" ShortID="347872895">
+							<PropertyList>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Gacha_FX_Object_Drawer_Closing_OS_03" ID="{751EDFB4-8A28-4C0C-B485-AF43B058C5D7}" ShortID="936437449">
+									<Language>SFX</Language>
+									<AudioFile>Gacha_FX_Object_Drawer_Closing_OS_03.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Gacha_FX_Object_Drawer_Closing_OS_03" ID="{751EDFB4-8A28-4C0C-B485-AF43B058C5D7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Gacha_FX_Object_Drawer_Openning_OS_01" ID="{4CB67D0F-0308-40A1-A1E7-B9387DB3F2B9}" ShortID="177824250">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Gacha_FX_Object_Drawer_Openning_OS_01" ID="{327AD976-2087-4CDC-AD5E-00049B54FD7E}" ShortID="1060653419">
+									<Language>SFX</Language>
+									<AudioFile>Gacha_FX_Object_Drawer_Openning_OS_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Gacha_FX_Object_Drawer_Openning_OS_01" ID="{327AD976-2087-4CDC-AD5E-00049B54FD7E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Gacha_FX_Object_Drawer_Openning_OS_02" ID="{8E5B6E26-41EB-4BB8-9942-B9CBDFF4BB42}" ShortID="845764208">
+							<PropertyList>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Gacha_FX_Object_Drawer_Openning_OS_02" ID="{1436582C-BCD5-4BD7-899B-0ADC986E3EC8}" ShortID="706532727">
+									<Language>SFX</Language>
+									<AudioFile>Gacha_FX_Object_Drawer_Openning_OS_02.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Gacha_FX_Object_Drawer_Openning_OS_02" ID="{1436582C-BCD5-4BD7-899B-0ADC986E3EC8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Gacha_FX_Object_Drawer_Openning_OS_03" ID="{BC8D3CAE-6078-4C6B-84B0-8BF1313FF380}" ShortID="944711511">
+							<PropertyList>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Gacha_FX_Object_Drawer_Openning_OS_03" ID="{C5266BA1-3F1A-4FBF-AD5A-037663D4E33A}" ShortID="228289798">
+									<Language>SFX</Language>
+									<AudioFile>Gacha_FX_Object_Drawer_Openning_OS_03.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Gacha_FX_Object_Drawer_Openning_OS_03" ID="{C5266BA1-3F1A-4FBF-AD5A-037663D4E33A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Gacha_Amb_Object_Pendulum_Death_SFX" ID="{80727B4C-9D31-427F-96A7-741043CDE3B7}" ShortID="212630644">
+							<PropertyList>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<Custom>
+										<Attenuation Name="Attenuation (Custom)" ID="{4296CA06-BD20-47EB-B378-1CF8ABF90AD2}" ShortID="254468361">
+											<CurveUsageInfoList>
+												<VolumeDryUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="VolumeDry" ID="{CA99E3D5-F155-4A7D-A459-A521DB032397}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="3"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>100</XPos>
+																	<YPos>-200</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</VolumeDryUsage>
+												<VolumeWetGameUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetGameUsage>
+												<VolumeWetUserUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetUserUsage>
+												<LowPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</LowPassFilterUsage>
+												<HighPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</HighPassFilterUsage>
+												<SpreadUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</SpreadUsage>
+												<FocusUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</FocusUsage>
+											</CurveUsageInfoList>
+										</Attenuation>
+									</Custom>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Gacha_Amb_Object_Pendulum_Death_SFX" ID="{94590061-D5F5-46B7-A25E-89EA89504AC4}" ShortID="888092220">
+									<Language>SFX</Language>
+									<AudioFile>Gacha_Amb_Object_Pendulum_Death_SFX.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Gacha_Amb_Object_Pendulum_Death_SFX" ID="{94590061-D5F5-46B7-A25E-89EA89504AC4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Musique" ID="{86F81FE2-789F-46F7-84A4-8A71F6889D6D}" ShortID="340473070">
+					<ChildrenList>
+						<RandomSequenceContainer Name="Gacha_Musique_Radio_RC" ID="{87F9EA7C-C0EF-483F-BAC9-E862A90AD4A5}" ShortID="880451202">
+							<PropertyList>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="3"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="music attenuation" ID="{8EC20DB0-1B40-43AF-A0BE-EB8B68615599}" WorkUnitID="{C93CF6A9-092A-48DA-BEA1-5124FE3F5380}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Gacha_Music_Chopin_etude_25_Soundtrack" ID="{F9B557A8-87D7-4016-8D0B-FB1967CDF8BD}" ShortID="717991625">
+									<PropertyList>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-9</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Gacha_Music_Chopin_etude_25_Soundtrack" ID="{A38BE030-A719-494D-9219-654B91A6FCAA}" ShortID="888339673">
+											<Language>SFX</Language>
+											<AudioFile>Gacha_Music_Chopin_etude_25_Soundtrack.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Gacha_Music_Chopin_etude_25_Soundtrack" ID="{A38BE030-A719-494D-9219-654B91A6FCAA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
