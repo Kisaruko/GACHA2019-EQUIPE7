@@ -211,7 +211,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Gacha_Char_FTPS_Switchcontainer" ID="{F3A93A36-10F2-494C-B1AC-64404285D721}" WorkUnitID="{D6FFAE7F-6E35-4EE0-ADE9-B88801F7F409}"/>
+									<ObjectRef Name="Gacha_Char_FTPS_Wood" ID="{F85F17B3-6BEF-452E-93D0-9F99F5BFCCB3}" WorkUnitID="{D6FFAE7F-6E35-4EE0-ADE9-B88801F7F409}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
