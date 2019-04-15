@@ -1517,7 +1517,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: LucasTest
+          m_StringArgument: Prototype
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -2571,7 +2571,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_textAlignment: 257
+  m_textAlignment: 514
   m_isAlignmentEnumConverted: 1
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -3892,25 +3892,49 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: c074d173ae56bad49b19fa5ee010fa74, type: 3}
+      propertyPath: m_TagString
+      value: Cadenas
+      objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: c074d173ae56bad49b19fa5ee010fa74, type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: c074d173ae56bad49b19fa5ee010fa74, type: 3}
+      propertyPath: m_TagString
+      value: Cadenas
       objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: c074d173ae56bad49b19fa5ee010fa74, type: 3}
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: c074d173ae56bad49b19fa5ee010fa74, type: 3}
+      propertyPath: m_TagString
+      value: Cadenas
+      objectReference: {fileID: 0}
     - target: {fileID: 100010, guid: c074d173ae56bad49b19fa5ee010fa74, type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: c074d173ae56bad49b19fa5ee010fa74, type: 3}
+      propertyPath: m_TagString
+      value: Cadenas
       objectReference: {fileID: 0}
     - target: {fileID: 100012, guid: c074d173ae56bad49b19fa5ee010fa74, type: 3}
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: c074d173ae56bad49b19fa5ee010fa74, type: 3}
+      propertyPath: m_TagString
+      value: Cadenas
+      objectReference: {fileID: 0}
     - target: {fileID: 100014, guid: c074d173ae56bad49b19fa5ee010fa74, type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: c074d173ae56bad49b19fa5ee010fa74, type: 3}
+      propertyPath: m_TagString
+      value: Cadenas
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: c074d173ae56bad49b19fa5ee010fa74, type: 3}
       propertyPath: m_LocalRotation.x
@@ -4400,6 +4424,7 @@ MonoBehaviour:
   - {fileID: 1815916512}
   - {fileID: 1815916510}
   - {fileID: 1815916508}
+  currentCamera: {fileID: 837072119}
   onOpen:
     m_PersistentCalls:
       m_Calls:
@@ -4429,6 +4454,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _flashSpeed: 2
+  _flashing: 0
 --- !u!114 &1815916541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4442,6 +4468,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _flashSpeed: 2
+  _flashing: 0
 --- !u!114 &1815916542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4455,6 +4482,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _flashSpeed: 2
+  _flashing: 0
 --- !u!114 &1815916543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4468,6 +4496,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _flashSpeed: 2
+  _flashing: 0
 --- !u!114 &1815916544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4481,6 +4510,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _flashSpeed: 2
+  _flashing: 0
 --- !u!114 &1815916545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4494,6 +4524,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _flashSpeed: 2
+  _flashing: 0
 --- !u!1 &1942028805
 GameObject:
   m_ObjectHideFlags: 0
