@@ -11,12 +11,14 @@ public class AllManager : MonoBehaviour
     private void Awake()
     {
         DontDestroyOnLoad(this);
+
+        if (Instance) DestroyImmediate(Instance);
+        Instance = this;
     }
 
     void Start()
     {
-        if (Instance) DestroyImmediate(Instance);
-        Instance = this;
+
     }
 
     // Update is called once per frame

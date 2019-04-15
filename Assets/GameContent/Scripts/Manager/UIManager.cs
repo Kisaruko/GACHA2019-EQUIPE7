@@ -85,7 +85,7 @@ public class UIManager : MonoBehaviour
 
     public void SetMatriochka(bool _isValid)
     {
-        if (!AllManager.Instance || !_isValid) return;
+        if (!AllManager.Instance) return;
 
         foreach (bool _true in AllManager.Instance.Matriochka)
         {

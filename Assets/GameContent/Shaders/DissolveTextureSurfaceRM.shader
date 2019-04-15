@@ -79,7 +79,7 @@
             // Metallic and smoothness come from slider variables
             o.Metallic = tex2D(_MetalMap, IN.uv_MainTex).r * dissolveAmount;
 			o.Normal = UnpackNormal(tex2D(_NormalMap, IN.uv_MainTex));
-            o.Smoothness = tex2D(_RoughMap, IN.uv_MainTex).r * dissolveAmount;
+            o.Smoothness = (1 - tex2D(_RoughMap, IN.uv_MainTex).r) * dissolveAmount;
             o.Alpha = c.a;
 			o.Emission = (1 - dissolveAmount) * _HiddenEmissive;
         }

@@ -77,7 +77,7 @@
             // Metallic and smoothness come from slider variables
             o.Metallic = _Metallic * dissolveAmount;
 			o.Normal = UnpackNormal(tex2D(_Normal, IN.uv_MainTex));
-            o.Smoothness = _Glossiness * dissolveAmount;
+            o.Smoothness = (1 - _Glossiness) * dissolveAmount;
             o.Alpha = c.a;
 			o.Emission = (1 - dissolveAmount) * _HiddenEmissive;
         }

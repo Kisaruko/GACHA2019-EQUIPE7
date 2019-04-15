@@ -14,7 +14,7 @@ public class ActivatePR : MonoBehaviour
 
         for (int _i = 0; _i < AllManager.Instance.Matriochka.Length; _i++)
         {
-            if (_i < matriochka.Length) matriochka[_i].SetActive(AllManager.Instance.Matriochka[_i]);
+            matriochka[_i].SetActive(AllManager.Instance.Matriochka[_i]);
             yield return new WaitForSeconds(.25f);
         }
     }

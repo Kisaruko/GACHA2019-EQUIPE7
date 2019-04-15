@@ -1,6 +1,12 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/M_Conserve.mat.meta
 guid: 42b5ba9c612eea84bbe5411f46102a2c
 NativeFormatImporter:
+=======
+guid: 04a048e17a65191468196f52e5d5a58f
+folderAsset: yes
+DefaultImporter:
+>>>>>>> develop:Assets/StreamingAssets/Audio/GeneratedSoundBanks.meta
   externalObjects: {}
   mainObjectFileID: 2100000
   userData: 

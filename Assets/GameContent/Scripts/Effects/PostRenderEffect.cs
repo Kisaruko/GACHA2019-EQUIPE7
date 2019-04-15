@@ -21,6 +21,7 @@ public class PostRenderEffect : MonoBehaviour
 {
     public ColorBlindMode mode = ColorBlindMode.Normal;
     private ColorBlindMode previousMode = ColorBlindMode.Normal;
+    public Shader colorBlind;
 
     public bool showDifference = false;
 
@@ -41,7 +42,7 @@ public class PostRenderEffect : MonoBehaviour
 
     void Awake()
     {
-        material = new Material(Shader.Find("Hidden/ColorBlind"));
+        material = new Material(colorBlind);
         material.SetColor("_R", RGB[0, 0]);
         material.SetColor("_G", RGB[0, 1]);
         material.SetColor("_B", RGB[0, 2]);
@@ -49,8 +50,8 @@ public class PostRenderEffect : MonoBehaviour
 
     void OnRenderImage(RenderTexture source, RenderTexture destination)
     {
-        mode = (ColorBlindMode)AllManager.Instance.colorBlindEnumIndex;
 
+        mode = (ColorBlindMode)AllManager.Instance.colorBlindEnumIndex;
         // No effect
         if (mode == ColorBlindMode.Normal)
         {
