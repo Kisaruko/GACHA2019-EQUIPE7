@@ -4,8 +4,8 @@ Shader "Custom/Dissolve Text" {
 	Properties{
 		_MainTex("Font Texture", 2D) = "white" {}
 		_Color("Text Color", Color) = (1,1,1,1)
+		_DissolveAmount("Dissolve Amount", Range(0,1)) = 0
 		_DissolveTexture("Dissolve Texture", 2D) = "black"
-		_DissolveAmount("Dissolve Amount", Float) = 0.0
 	}
 
 		SubShader{
@@ -16,7 +16,7 @@ Shader "Custom/Dissolve Text" {
 				"RenderType" = "Transparent"
 				"PreviewType" = "Plane"
 			}
-			Lighting Off Cull Off ZTest Always ZWrite Off
+			Lighting Off Cull Off
 			Blend SrcAlpha OneMinusSrcAlpha
 
 			Pass {
@@ -65,8 +65,7 @@ Shader "Custom/Dissolve Text" {
 				{
 					fixed4 col = i.color;
 					fixed dissolve = round((1 - tex2D(_DissolveTexture, i.texcoord1).r) - _DissolveAmount + 0.5f);
-					col.a *= tex2D(_MainTex, i.texcoord).a;
-					col.a = clamp(col.a - dissolve, 0, 1);
+					col.a *= tex2D(_MainTex, i.texcoord).a * i.color.a * - dissolve;
 					return col;
 				}
 				ENDCG
