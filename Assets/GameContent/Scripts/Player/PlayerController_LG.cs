@@ -41,10 +41,22 @@ public class PlayerController_LG : MonoBehaviour
         }
     }
 
+    /// <summary>Backing field for <see cref="IsCrouch"/>.</summary>
+    public bool                 isCrouch                        = false;
+
     /// <summary>
     /// Indicates if the player is crouch
     /// </summary>
-    public bool                 isCrouch                        = false;
+    public bool                 IsCrouch
+    {
+        get { return isCrouch; }
+        set
+        {
+            isCrouch = value;
+            canMove = !value;
+            if (isMoving) IsMoving = false;
+        }
+    }
 
     /// <summary>
     /// If false, the player cannot rotate the camera
@@ -129,14 +141,14 @@ public class PlayerController_LG : MonoBehaviour
         {
             if (!isCrouch)
             {
-                animator.SetBool("Crouch", true);
-                isCrouch = true;
+                animator.SetBool("isCrouch", true);
+                IsCrouch = true;
             }
         }
         else if (isCrouch)
         {
-            animator.SetBool("Crouch", false);
-            isCrouch = false;
+            animator.SetBool("isCrouch", false);
+            IsCrouch = false;
         }
 
         if (!canMove) return;
@@ -200,7 +212,6 @@ public class PlayerController_LG : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
-        if (UIManager.Instance) UIManager.Instance.OnPause += (bool _doPause) => canLook = !_doPause;
         if (UIManager.Instance) UIManager.Instance.OnPause += (bool _doPause) => canLook = !_doPause;
     }
 

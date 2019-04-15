@@ -9,11 +9,30 @@ public class ClockTimer : MonoBehaviour
 
     [SerializeField] private Transform _hand = null;
     [SerializeField] private int _duration = 60;
+    [SerializeField] private float _tickDuration = 1;
 
-    [SerializeField] private UnityEvent _onTimerEnd = null; 
+    [SerializeField] private UnityEvent _onTimerEnd = null;
 
 
     #endregion
+
+
+    #region Accessors
+
+    public int Duration
+    {
+        get { return _duration; }
+        set { _duration = Mathf.Abs(value); }
+    }
+
+    public float TickDuration
+    {
+        get { return _tickDuration; }
+        set { _tickDuration = Mathf.Abs(value); }
+    }
+
+    #endregion
+
 
     #region Methods
 
@@ -21,7 +40,7 @@ public class ClockTimer : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(Timer());
+        StartCoroutine("Timer");
 
     }
 
@@ -35,7 +54,7 @@ public class ClockTimer : MonoBehaviour
         for (int i = _duration; i >= 0; i--)
         {
             SetHandRoll(i);
-            yield return new WaitForSecondsRealtime(1f);
+            yield return new WaitForSeconds(_tickDuration);
         }
 
         EndTimer();
@@ -57,12 +76,32 @@ public class ClockTimer : MonoBehaviour
 
     private void EndTimer()
     {
-
-
        _onTimerEnd?.Invoke();
     }
 
+    #endregion
+
+    #region Public
+
+    /// <summary>
+    /// Stops the actual timer
+    /// </summary>
+    public void StopTimer()
+    {
+        StopAllCoroutines();
+    }
+
+    /// <summary>
+    /// Starts timer with a given duration
+    /// </summary>
+    /// <param name="time"></param>
+    public void StartTimer(int time)
+    {
+        Duration = time;
+        StartCoroutine("Timer");
+    }
 
     #endregion
+
     #endregion
 }

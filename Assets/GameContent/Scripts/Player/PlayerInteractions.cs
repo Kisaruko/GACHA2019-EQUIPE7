@@ -1,14 +1,24 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerInteractions : MonoBehaviour
 {
-    public GameObject hand;
+    public PlayerController_LG controller;
     private GameObject lastObjectSee;
     public float timerHighlight = 0;
     public float maxtimer = 0.75f;
     public bool canRotateObject;
+    public bool CanRotateObject
+    {
+        get { return canRotateObject; }
+        set
+        {
+            canRotateObject = value;
+            controller.canLook = !value;
+            controller.canMove = !value;
+
+            Cursor.lockState = (value == true) ? CursorLockMode.Confined : CursorLockMode.Locked;
+        }
+    }
     public float speedRotateObj = 0.1f;
     public float distMaxDrop = 3;
     Vector3 initialPosObj;
@@ -16,6 +26,20 @@ public class PlayerInteractions : MonoBehaviour
     //True if there is a player interactionand timerHighlight is zero
     private bool _canDisplayInteraction;
     public bool CanDisplayInteraction { get { return _canDisplayInteraction; } } //Readonly _canDisplayInteraction
+
+    public void Desactive()
+    {
+        GetComponent<Animator>().enabled = false;
+        controller.enabled = false;
+        this.enabled = false;
+    }
+
+    public void Active()
+    {
+        GetComponent<Animator>().enabled = true;
+        controller.enabled = true;
+        this.enabled = true;
+    }
 
     void Update()
     {
@@ -41,27 +65,16 @@ public class PlayerInteractions : MonoBehaviour
 
                 }
             }
-            if (hand && Input.GetMouseButtonDown(0) && hit.transform.gameObject.CompareTag("Drop"))
+            if (Input.GetMouseButtonDown(0) && hit.transform.gameObject.CompareTag("Drop"))
             {
-                hit.transform.SetParent(hand.transform);
-                hit.transform.position = hand.transform.position;
-                hit.rigidbody.isKinematic = true;
-                hit.transform.gameObject.GetComponent<Collider>().enabled = false;
+                hit.transform.SetParent(Camera.main.transform);
+                hit.rigidbody.useGravity = false;
+                hit.rigidbody.constraints = RigidbodyConstraints.FreezeRotation;
             }
-            else if (hit.transform.gameObject.CompareTag("Interact") && Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) && hit.transform.gameObject.CompareTag("Interact"))
             {
-                try
-                {
-                    hit.transform.gameObject.GetComponent<Interact>().StartEvent();
-                }
-                catch (System.Exception)
-                {
-
-                    throw;
-                }
-                
+                hit.transform.GetComponent<Trigger>().ActiveInteract();
             }
-
         }
         else
         {
@@ -70,67 +83,74 @@ public class PlayerInteractions : MonoBehaviour
 
         if (Input.GetMouseButtonUp(0))
         {
-            if (hand.transform.childCount > 0)
+            if (Camera.main.transform.childCount > 0)
             {
-                hand.transform.GetChild(0).gameObject.GetComponent<Rigidbody>().isKinematic = false;
-                hand.transform.GetChild(0).gameObject.GetComponent<Collider>().enabled = true;
-                hand.transform.GetChild(0).transform.SetParent(null);
+                Rigidbody _rigidbody = Camera.main.transform.GetChild(0).gameObject.GetComponent<Rigidbody>();
+                if (_rigidbody)
+                {
+                    _rigidbody.useGravity = true;
+                    _rigidbody.constraints = RigidbodyConstraints.None;
+                }
+                Camera.main.transform.GetChild(0).transform.SetParent(null);
 
             }
-            canRotateObject = false;
+            CanRotateObject = false;
         }
         if (Input.GetMouseButton(0))
         {
             if (Input.GetMouseButtonDown(1))
             {
-                canRotateObject = !canRotateObject;
+                CanRotateObject = !canRotateObject;
                 initialPosObj = Vector3.zero;
 
             }
             if (canRotateObject)
             {
-                /* Vector3 _pos = Input.mousePosition - initialPosObj;
-                 if (hand.transform.childCount > 0)
-                 {
-                     hand.transform.GetChild(0).transform.Rotate(speedRotateObj * _pos);
-                 }*/
+
+                Camera.main.transform.GetChild(0).transform.Rotate(new Vector3(0, Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * speedRotateObj);
+                return;
+                /*
                 Vector3 posCamera = Camera.main.transform.position;
                 if (Input.mousePosition.y >= Screen.height * (0.5) && Input.mousePosition.y < Screen.height)
                 {
                     Debug.Log((180 * (Input.mousePosition.y - Screen.height / 2)) / Screen.height);
-                    hand.transform.GetChild(0).transform.eulerAngles = new Vector3(
-                        hand.transform.GetChild(0).transform.eulerAngles.x,
-                        hand.transform.GetChild(0).transform.eulerAngles.y,
+                    Camera.main.transform.GetChild(0).transform.eulerAngles = new Vector3(
+                        Camera.main.transform.GetChild(0).transform.eulerAngles.x,
+                        Camera.main.transform.GetChild(0).transform.eulerAngles.y,
                         (360 * (Input.mousePosition.y - Screen.height / 2)) / Screen.height);
                 }
                 else if (Input.mousePosition.y <= Screen.height * (0.5) && Input.mousePosition.y > 0)
                 {
                     Debug.Log((180 * Input.mousePosition.y) / Screen.height);
-                    hand.transform.GetChild(0).transform.eulerAngles = new Vector3(
-                        hand.transform.GetChild(0).transform.eulerAngles.x,
-                        hand.transform.GetChild(0).transform.eulerAngles.y,
+                    Camera.main.transform.GetChild(0).transform.eulerAngles = new Vector3(
+                        Camera.main.transform.GetChild(0).transform.eulerAngles.x,
+                        Camera.main.transform.GetChild(0).transform.eulerAngles.y,
                         (360 * (Input.mousePosition.y)) / Screen.height);
                 }
 
                 if (Input.mousePosition.x >= Screen.width * (0.5) && Input.mousePosition.x < Screen.width)
                 {
                     Debug.Log((180 * (Input.mousePosition.x - Screen.width / 2)) / Screen.width);
-                    hand.transform.GetChild(0).transform.eulerAngles = new Vector3(
-                        hand.transform.GetChild(0).transform.eulerAngles.x,
+                    Camera.main.transform.GetChild(0).transform.eulerAngles = new Vector3(
+                        Camera.main.transform.GetChild(0).transform.eulerAngles.x,
                         (360 * (Input.mousePosition.x)) / Screen.width,
-                        hand.transform.GetChild(0).transform.eulerAngles.z);
+                        Camera.main.transform.GetChild(0).transform.eulerAngles.z);
                 }
                 else if (Input.mousePosition.x <= Screen.width * (0.5) && Input.mousePosition.x > 0)
                 {
                     Debug.Log((180 * Input.mousePosition.x) / Screen.width);
-                    hand.transform.GetChild(0).transform.eulerAngles = new Vector3(
-                        hand.transform.GetChild(0).transform.eulerAngles.x,
+                    Camera.main.transform.GetChild(0).transform.eulerAngles = new Vector3(
+                        Camera.main.transform.GetChild(0).transform.eulerAngles.x,
                         (360 * (Input.mousePosition.x)) / Screen.width,
-                        hand.transform.GetChild(0).transform.eulerAngles.z);
-                }
+                        Camera.main.transform.GetChild(0).transform.eulerAngles.z);
+                }*/
             }
 
         }
 
+    }
+    private void Awake()
+    {
+        controller  = GetComponent<PlayerController_LG>();
     }
 } //Fin du script --> Pierrick + Kérian

@@ -4,9 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - key
   - Drop
   - Interact
+  - Cadenas
   layers:
   - Default
   - TransparentFX

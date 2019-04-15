@@ -10,6 +10,7 @@ public class EnigmeCadenaMenu : MonoBehaviour
     public GameObject objSelected;
     public string codeCadena = "012345";
     public NumberCadena[] cylindre = new NumberCadena[6];
+    public Camera currentCamera;
     bool canRotate = true;
     string _actualNum = "";
     bool isOpen = false;
@@ -33,16 +34,34 @@ public class EnigmeCadenaMenu : MonoBehaviour
             onOpen.Invoke();
         }
         RaycastHit hit;
-        if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, Mathf.Infinity, LayerMask.GetMask("Interactive"))&&Input.GetMouseButtonDown(0))
+        if (Physics.Raycast(currentCamera.ScreenPointToRay(Input.mousePosition), out hit, Mathf.Infinity, LayerMask.GetMask("Interactive"))&&Input.GetMouseButtonDown(0))
         {
+            HighlightSurfaceFresnelControler fresnelControler;
             if (objSelected)
             {
-                objSelected.transform.localScale = Vector3.one;
-                objSelected.GetComponent<HighlightSurfaceFresnelControler>().SetHighlight(false);
+
+                fresnelControler = objSelected.GetComponent<HighlightSurfaceFresnelControler>();
+                if (fresnelControler)
+                {
+                    objSelected.transform.localScale = Vector3.one;
+                    fresnelControler.SetHighlight(false);
+                }
+
             }
-            objSelected = hit.transform.gameObject;
-            objSelected.transform.localScale = Vector3.one * 1.1f;
-            objSelected.GetComponent<HighlightSurfaceFresnelControler>().SetHighlight(true);
+            if(hit.transform.gameObject.tag == "Cadenas")
+            {
+                objSelected = hit.transform.gameObject;
+                fresnelControler = objSelected.GetComponent<HighlightSurfaceFresnelControler>();
+
+                if (fresnelControler)
+                {
+                    objSelected.transform.localScale = Vector3.one * 1.1f;
+                    objSelected.GetComponent<HighlightSurfaceFresnelControler>().SetHighlight(true);
+                }
+            }
+        
+            
+
 
             //Debug.Log(objSelected.name);
 
@@ -70,7 +89,7 @@ public class EnigmeCadenaMenu : MonoBehaviour
         }
         else if (Input.GetAxis("Mouse ScrollWheel") < 0f) // backwards
         {
-            objSelected?.transform.Rotate(Vector3.right * +36);
+            if (objSelected) { objSelected.transform.Rotate(Vector3.right * +36); }
             try
             {
                 if (objSelected.GetComponent<NumberCadena>().number >0) {
@@ -89,5 +108,11 @@ public class EnigmeCadenaMenu : MonoBehaviour
         
 
     }
-    
+    private void Start()
+    {
+        currentCamera = FindObjectOfType<Camera>();
+
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
 }

@@ -1,8 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.SceneManagement;
+using DG.Tweening;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class UIManager : MonoBehaviour
     public event Action OnLoadScene = null;
     public GameObject loadingAnchor = null;
     public bool isPaused = false;
+    public Image image;
 
     public static UIManager Instance = null;
 
@@ -19,14 +21,40 @@ public class UIManager : MonoBehaviour
         LoadScene(0);
     }
 
+    public void LoadNextSceneWithDelay(int _delay)
+    {
+        StartCoroutine(LoadCoroutine(_delay));
+    }
+    public void LoadNextScene()
+    {
+        int _index = SceneManager.GetActiveScene().buildIndex;
+        if (_index >= SceneManager.sceneCountInBuildSettings - 1) _index = 0;
+        else _index++;
+
+        LoadScene(_index);
+    }
+
     public void ReloadScene()
     {
         LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
+    private IEnumerator LoadCoroutine(int _delay)
+    {
+        yield return new WaitForSeconds(_delay);
+        if (image != null) image.DOColor(new Color(0, 0, 0, 1), 1);
+        yield return new WaitForSeconds(1);
+       LoadNextScene();
+    }
+
     private void LoadScene(int _sceneIndex)
     {
         if (isPaused) Time.timeScale = 1;
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = true;
+
+        
+
         OnLoadScene?.Invoke();
         loadingAnchor.SetActive(true);
         SceneManager.LoadScene(_sceneIndex);
@@ -43,6 +71,14 @@ public class UIManager : MonoBehaviour
         pauseAnchor.SetActive(_doPause);
 
         OnPause?.Invoke(_doPause);
+    }
+
+    public void SetMatriochka(bool _isValid)
+    {
+        if (!AllManager.Instance) return;
+
+        int _index = SceneManager.GetActiveScene().buildIndex - 1;
+        if (_index < AllManager.Instance.Matriochka.Length) AllManager.Instance.Matriochka[_index] = _isValid;
     }
 
     private void Awake()
