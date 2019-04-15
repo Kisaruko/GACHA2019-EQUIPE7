@@ -59,7 +59,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 58c6eb15a744b640aa9eec40a892bed9
     GuidInternal: 
-    m_lastTime: -8586463242037049270
+    m_lastTime: -8586462851004528073
     List:
     - name: Gacha_Amb_city_exterieure_LP
       guid: c8453751bac01947adf9fd04e0d27e53
@@ -112,6 +112,18 @@ MonoBehaviour:
       - ElementName: Gacha_Amb_Object_Pendulum_Last_10_seconds_OS
         ObjectType: 3
       Path: Gacha2019\Gacha_Amb_Object_Pendulum_Last_10_seconds_OS
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Gacha_Amb_Objects_Pendulum_Deathi_OS
+      guid: 2123f8a3203529448bc56ade96414cb2
+      id: 536567207
+      PathAndIcons:
+      - ElementName: Gacha2019
+        ObjectType: 12
+      - ElementName: Gacha_Amb_Objects_Pendulum_Deathi_OS
+        ObjectType: 3
+      Path: Gacha2019\Gacha_Amb_Objects_Pendulum_Deathi_OS
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -335,6 +347,5 @@ MonoBehaviour:
   - /GACHA2019_WwiseProject/Events
   - /GACHA2019_WwiseProject/Events/Gacha2019
   - /GACHA2019_WwiseProject/Events/Gacha2019/Ambiances
-  - /GACHA2019_WwiseProject/Events/Gacha2019/UI Menu
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

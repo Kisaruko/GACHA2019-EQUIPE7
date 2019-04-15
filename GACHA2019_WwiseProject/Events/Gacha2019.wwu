@@ -101,7 +101,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Gacha_Objects_Pendulum_Timer_Normal_LP" ID="{6F3CC018-4A0A-47BC-958A-F29FF98B43F0}" WorkUnitID="{3580B36E-9CB1-40A8-AE7A-09126A779563}"/>
+											<ObjectRef Name="Tik Tak" ID="{7FB1A464-AE58-4A54-B019-6C92BCAC977D}" WorkUnitID="{3580B36E-9CB1-40A8-AE7A-09126A779563}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -187,7 +187,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Gacha_Objects_Pendulum_Timer_Normal_LP" ID="{6F3CC018-4A0A-47BC-958A-F29FF98B43F0}" WorkUnitID="{3580B36E-9CB1-40A8-AE7A-09126A779563}"/>
+									<ObjectRef Name="Tik Tak" ID="{7FB1A464-AE58-4A54-B019-6C92BCAC977D}" WorkUnitID="{3580B36E-9CB1-40A8-AE7A-09126A779563}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -197,19 +197,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Gacha_Amb_Object_Pendulum_Last_10_seconds_OS" ID="{1823E1D3-DFDF-4018-848B-F12ABF6D6225}" WorkUnitID="{3580B36E-9CB1-40A8-AE7A-09126A779563}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{D4D21FE8-7881-4B97-9E1A-2572931E888D}" ShortID="356015924">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-								<Property Name="Delay" Type="Real64" Value="10"/>
-								<Property Name="FadeTime" Type="Real64" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Gacha_Amb_Object_Pendulum_Death_SFX" ID="{80727B4C-9D31-427F-96A7-741043CDE3B7}" WorkUnitID="{3580B36E-9CB1-40A8-AE7A-09126A779563}"/>
+									<ObjectRef Name="Last tik tak" ID="{FC15AAC8-F7C7-4451-B597-1F563863B672}" WorkUnitID="{3580B36E-9CB1-40A8-AE7A-09126A779563}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -263,6 +251,20 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Gacha_FX_Pickup_Padlock_Rolling_OS" ID="{C5C70DC6-AC71-439F-9D15-2E2DA37857EC}" WorkUnitID="{77135A00-2559-45FA-BCFA-CB2B30857223}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Gacha_Amb_Objects_Pendulum_Death_OS" ID="{A3F82321-3520-4429-8BC5-6ADE96414CB2}">
+					<ChildrenList>
+						<Action Name="" ID="{FF66578A-1099-4122-846B-13D14FEBECDF}" ShortID="900411981">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Gacha_Amb_Object_Pendulum_Death_SFX" ID="{80727B4C-9D31-427F-96A7-741043CDE3B7}" WorkUnitID="{3580B36E-9CB1-40A8-AE7A-09126A779563}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

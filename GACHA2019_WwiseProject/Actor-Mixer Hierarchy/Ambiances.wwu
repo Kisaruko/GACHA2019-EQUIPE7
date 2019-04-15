@@ -162,38 +162,6 @@
 								<ActiveSource Name="Gacha_Ambi_General_Apartment_LP" ID="{1D8EA490-F1F9-4E5F-BC30-D50678409C0F}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Gacha_Objects_Pendulum_Timer_Normal_LP" ID="{6F3CC018-4A0A-47BC-958A-F29FF98B43F0}" ShortID="98925759">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="MaxSoundPerInstance" Type="int16">
-									<ValueList>
-										<Value>1</Value>
-									</ValueList>
-								</Property>
-								<Property Name="UseMaxSoundPerInstance" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Gacha_Objects_Pendulum_Timer_Normal_LP" ID="{70C78AB5-582E-4B7D-8DD2-499BA94AF38F}" ShortID="435775012">
-									<Language>SFX</Language>
-									<AudioFile>Gacha_Objects_Pendulum_Timer_Normal_LP.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Gacha_Objects_Pendulum_Timer_Normal_LP" ID="{70C78AB5-582E-4B7D-8DD2-499BA94AF38F}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<Sound Name="Gahca_Amb_Fireplace_Endgame_LP" ID="{16D9D7F2-3A1B-4015-952B-3D9E2C257FB8}" ShortID="795603917">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
@@ -229,37 +197,6 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="Gahca_Amb_Fireplace_Endgame_LP" ID="{8F1CC2D2-749C-44C3-809C-BD5EA4F53670}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Gacha_Amb_Object_Pendulum_Last_10_seconds_OS" ID="{1823E1D3-DFDF-4018-848B-F12ABF6D6225}" ShortID="155499310">
-							<PropertyList>
-								<Property Name="MaxSoundPerInstance" Type="int16">
-									<ValueList>
-										<Value>1</Value>
-									</ValueList>
-								</Property>
-								<Property Name="UseMaxSoundPerInstance" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Gacha_Amb_Object_Pendulum_Last_10_seconds_OS" ID="{9D5E72C7-2CD6-4E9C-A5EC-3AF9E2C84FB1}" ShortID="700013861">
-									<Language>SFX</Language>
-									<AudioFile>Gacha_Amb_Object_Pendulum_Last_10_seconds_OS.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Gacha_Amb_Object_Pendulum_Last_10_seconds_OS" ID="{9D5E72C7-2CD6-4E9C-A5EC-3AF9E2C84FB1}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Gacha_Amb_city_exterieure_LP" ID="{24163FF5-F142-4872-9CA6-9081D0C576B5}" ShortID="533135095">
@@ -398,6 +335,244 @@
 								<ActiveSource Name="Gacha_Amb_Feedback_Full_Complete_LP_PH" ID="{CA5B69BD-AA72-45BE-A364-B8CFE2FD7A8E}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<RandomSequenceContainer Name="Tik Tak" ID="{7FB1A464-AE58-4A54-B019-6C92BCAC977D}" ShortID="420561807">
+							<PropertyList>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Tik" ID="{0A61B424-756A-472E-9923-F0A5F42CFE0D}" ShortID="154433091">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Gacha_Objects_Pendulum_Timer_Normal_LP" ID="{EA42FD8D-D017-446F-B929-A21F709D66B4}" ShortID="756655973">
+											<PropertyList>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Gacha_Objects_Pendulum_Timer_Normal_LP" ID="{A5870EB9-FE6F-480C-B85F-E552C9806C77}" ShortID="378597805">
+													<PropertyList>
+														<Property Name="TrimBegin" Type="Real64" Value="1.19355925628859"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.18945370677512"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Gacha_Objects_Pendulum_Timer_Normal_LP.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="435775012"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Gacha_Objects_Pendulum_Timer_Normal_LP" ID="{A5870EB9-FE6F-480C-B85F-E552C9806C77}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Tak" ID="{BEE87557-35F3-46A6-A332-CE6B7EE8BDDB}" ShortID="164166798">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Gacha_Objects_Pendulum_Timer_Normal_LP" ID="{6F3CC018-4A0A-47BC-958A-F29FF98B43F0}" ShortID="98925759">
+											<PropertyList>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Gacha_Objects_Pendulum_Timer_Normal_LP" ID="{70C78AB5-582E-4B7D-8DD2-499BA94AF38F}" ShortID="435775012">
+													<PropertyList>
+														<Property Name="TrimBegin" Type="Real64" Value="0.187744600502078"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.1872479858962"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Gacha_Objects_Pendulum_Timer_Normal_LP.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="378597805"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Gacha_Objects_Pendulum_Timer_Normal_LP" ID="{70C78AB5-582E-4B7D-8DD2-499BA94AF38F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<Playlist>
+								<ItemRef Name="Tik" ID="{0A61B424-756A-472E-9923-F0A5F42CFE0D}"/>
+								<ItemRef Name="Tak" ID="{BEE87557-35F3-46A6-A332-CE6B7EE8BDDB}"/>
+							</Playlist>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Last tik tak" ID="{FC15AAC8-F7C7-4451-B597-1F563863B672}" ShortID="1010121061">
+							<PropertyList>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Tik" ID="{CA3FC9E2-CA96-429D-B95F-38A411B902BD}" ShortID="1020800008">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Gacha_Amb_Object_Pendulum_Last_10_seconds_OS" ID="{18C0B011-1002-4FE1-9D39-B52DF97FF316}" ShortID="639959739">
+											<PropertyList>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Gacha_Amb_Object_Pendulum_Last_10_seconds_OS" ID="{AF6ECB2D-E21A-41CC-813C-48ABC8ABF78A}" ShortID="1033666463">
+													<PropertyList>
+														<Property Name="TrimBegin" Type="Real64" Value="1.19376776199234"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.18633874445733"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Gacha_Amb_Object_Pendulum_Last_10_seconds_OS.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="700013861"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Gacha_Amb_Object_Pendulum_Last_10_seconds_OS" ID="{AF6ECB2D-E21A-41CC-813C-48ABC8ABF78A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Tak" ID="{5CB69D57-76E1-4109-9D31-5BD5E16678F2}" ShortID="674709330">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Gacha_Amb_Object_Pendulum_Last_10_seconds_OS" ID="{1823E1D3-DFDF-4018-848B-F12ABF6D6225}" ShortID="155499310">
+											<PropertyList>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Gacha_Amb_Object_Pendulum_Last_10_seconds_OS" ID="{9D5E72C7-2CD6-4E9C-A5EC-3AF9E2C84FB1}" ShortID="700013861">
+													<PropertyList>
+														<Property Name="TrimBegin" Type="Real64" Value="0.187717515881377"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.18700996389372"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Gacha_Amb_Object_Pendulum_Last_10_seconds_OS.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="1033666463"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Gacha_Amb_Object_Pendulum_Last_10_seconds_OS" ID="{9D5E72C7-2CD6-4E9C-A5EC-3AF9E2C84FB1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<Playlist>
+								<ItemRef Name="Tak" ID="{5CB69D57-76E1-4109-9D31-5BD5E16678F2}"/>
+								<ItemRef Name="Tik" ID="{CA3FC9E2-CA96-429D-B95F-38A411B902BD}"/>
+							</Playlist>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Ambiance objects" ID="{6D5988FA-958B-4E2E-818D-840E85B71C85}" ShortID="595958371">
@@ -608,6 +783,11 @@
 								<Property Name="UseMaxSoundPerInstance" Type="bool">
 									<ValueList>
 										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>

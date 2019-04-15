@@ -25,6 +25,7 @@
 				<Event Id="648737712" Name="Gacha_Amb_Cuisine_Frigo_LP" ObjectPath="\Events\Gacha2019\Ambiances\Gacha_Amb_Cuisine_Frigo_LP" MaxAttenuation="20.000000"/>
 				<Event Id="374124454" Name="Gacha_Amb_Feedback_Full_Complete_LP_PH" ObjectPath="\Events\Gacha2019\Ambiances\Gacha_Amb_Feedback_Full_Complete_LP_PH"/>
 				<Event Id="1831861089" Name="Gacha_Amb_Object_Pendulum_Last_10_seconds_OS" ObjectPath="\Events\Gacha2019\Gacha_Amb_Object_Pendulum_Last_10_seconds_OS"/>
+				<Event Id="600392946" Name="Gacha_Amb_Objects_Pendulum_Death_OS" ObjectPath="\Events\Gacha2019\Gacha_Amb_Objects_Pendulum_Death_OS" MaxAttenuation="100.000000"/>
 				<Event Id="2948500498" Name="Gacha_Ambi_General_Apartment_LP" ObjectPath="\Events\Gacha2019\Ambiances\Gacha_Ambi_General_Apartment_LP"/>
 				<Event Id="2571062478" Name="Gacha_Char_FTPS_Switchcontainer" ObjectPath="\Events\Gacha2019\Gacha_Char_FTPS_Switchcontainer"/>
 				<Event Id="883481547" Name="Gacha_FX_Pickup_Padlock_OS" ObjectPath="\Events\Gacha2019\Gacha_FX_Pickup_Padlock_OS"/>
@@ -95,9 +96,13 @@
 					<ShortName>Gacha_UI_Menu_Entering_Option_SFX_04.wav</ShortName>
 					<Path>SFX\Gacha_UI_Menu_Entering_Option_SFX_04_56D34C19.wem</Path>
 				</File>
+				<File Id="378597805" Language="SFX">
+					<ShortName>Gacha_Objects_Pendulum_Timer_Normal_LP.wav</ShortName>
+					<Path>SFX\Gacha_Objects_Pendulum_Timer_Normal_LP_3BC0F57F.wem</Path>
+				</File>
 				<File Id="435775012" Language="SFX">
 					<ShortName>Gacha_Objects_Pendulum_Timer_Normal_LP.wav</ShortName>
-					<Path>SFX\Gacha_Objects_Pendulum_Timer_Normal_LP_8956FC97.wem</Path>
+					<Path>SFX\Gacha_Objects_Pendulum_Timer_Normal_LP_101FB639.wem</Path>
 				</File>
 				<File Id="450917229" Language="SFX">
 					<ShortName>Gachai_UI_Menu_Openmenu_SFX.wav</ShortName>
@@ -125,7 +130,7 @@
 				</File>
 				<File Id="700013861" Language="SFX">
 					<ShortName>Gacha_Amb_Object_Pendulum_Last_10_seconds_OS.wav</ShortName>
-					<Path>SFX\Gacha_Amb_Object_Pendulum_Last_10_seconds_OS_56D34C19.wem</Path>
+					<Path>SFX\Gacha_Amb_Object_Pendulum_Last_10_seconds_OS_7239E535.wem</Path>
 				</File>
 				<File Id="702382559" Language="SFX">
 					<ShortName>Gacha_Char_FTPS_Wood_OS_06.wav</ShortName>
@@ -170,6 +175,10 @@
 				<File Id="961501280" Language="SFX">
 					<ShortName>Gacha_UI_Menu_Sortie_SFX_02.wav</ShortName>
 					<Path>SFX\Gacha_UI_Menu_Sortie_SFX_02_56D34C19.wem</Path>
+				</File>
+				<File Id="1033666463" Language="SFX">
+					<ShortName>Gacha_Amb_Object_Pendulum_Last_10_seconds_OS.wav</ShortName>
+					<Path>SFX\Gacha_Amb_Object_Pendulum_Last_10_seconds_OS_974E2FFA.wem</Path>
 				</File>
 				<File Id="1066790933" Language="SFX">
 					<ShortName>Gacha_Char_FTPS_Carpet_OS_01.wav</ShortName>
