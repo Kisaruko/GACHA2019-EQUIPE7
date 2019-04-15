@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
+    #region Fields / Properties
     public event Action<bool> OnPause = null;
     public GameObject pauseAnchor = null;
     public event Action OnLoadScene = null;
@@ -15,7 +16,11 @@ public class UIManager : MonoBehaviour
     public Image image;
 
     public static UIManager Instance = null;
+    #endregion
 
+    #region Methods
+
+    #region Original Methods
     public void BackToMenu()
     {
         LoadScene(0);
@@ -23,7 +28,7 @@ public class UIManager : MonoBehaviour
 
     public void LoadNextSceneWithDelay(int _delay)
     {
-        StartCoroutine(LoadCoroutine(_delay));
+        StartCoroutine(LoadCoroutine(_delay, LoadNextScene));
     }
     public void LoadNextScene()
     {
@@ -39,12 +44,17 @@ public class UIManager : MonoBehaviour
         LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    private IEnumerator LoadCoroutine(int _delay)
+    public void ReloadSceneWithDelay(int _delay)
+    {
+        StartCoroutine(LoadCoroutine(_delay, ReloadScene));
+    }
+
+    private IEnumerator LoadCoroutine(int _delay, Action _callback)
     {
         yield return new WaitForSeconds(_delay);
         if (image != null) image.DOColor(new Color(0, 0, 0, 1), 1);
         yield return new WaitForSeconds(1);
-       LoadNextScene();
+        _callback?.Invoke();
     }
 
     private void LoadScene(int _sceneIndex)
@@ -80,16 +90,13 @@ public class UIManager : MonoBehaviour
         int _index = SceneManager.GetActiveScene().buildIndex - 1;
         if (_index < AllManager.Instance.Matriochka.Length) AllManager.Instance.Matriochka[_index] = _isValid;
     }
+    #endregion
 
+    #region Unity Methods
     private void Awake()
     {
-        Instance = this;
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+        if (!Instance) Instance = this;
+        else Destroy(this);
     }
 
     // Update is called once per frame
@@ -100,4 +107,7 @@ public class UIManager : MonoBehaviour
             Pause(!isPaused);
         }
     }
+    #endregion
+
+    #endregion
 }

@@ -6,6 +6,7 @@ Shader "Custom/Dissolve Text" {
 		_Color("Text Color", Color) = (1,1,1,1)
 		_DissolveAmount("Dissolve Amount", Range(0,1)) = 0
 		_DissolveTexture("Dissolve Texture", 2D) = "black"
+		_DisplacementAmount("Displacement Amount", Float) = 1
 	}
 
 		SubShader{
@@ -16,7 +17,7 @@ Shader "Custom/Dissolve Text" {
 				"RenderType" = "Transparent"
 				"PreviewType" = "Plane"
 			}
-			Lighting Off Cull Off
+			Lighting Off Cull Off ZWrite Off
 			Blend SrcAlpha OneMinusSrcAlpha
 
 			Pass {
@@ -29,6 +30,7 @@ Shader "Custom/Dissolve Text" {
 				struct appdata_t {
 					float4 vertex : POSITION;
 					fixed4 color : COLOR;
+					fixed3 normal : NORMAL;
 					float2 texcoord : TEXCOORD0;
 					float2 texcoord1 : TEXCOORD1;
 					UNITY_VERTEX_INPUT_INSTANCE_ID
@@ -48,12 +50,15 @@ Shader "Custom/Dissolve Text" {
 				uniform float4 _DissolveTexture_ST;
 				uniform fixed4 _Color;
 				float _DissolveAmount;
+				float _DisplacementAmount;
 
 				v2f vert(appdata_t v)
 				{
 					v2f o;
 					UNITY_SETUP_INSTANCE_ID(v);
 					UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o);
+					v.vertex.xyz += v.normal.xyz * _DissolveAmount * tex2Dlod(_DissolveTexture, float4(v.texcoord1.xy,0,0)).r * 2;
+					v.vertex.xy += tex2Dlod(_DissolveTexture, float4(v.texcoord1.x, v.texcoord1.y + _Time[0], 0, 0)).r * _DisplacementAmount;
 					o.vertex = UnityObjectToClipPos(v.vertex);
 					o.color = v.color * _Color;
 					o.texcoord = TRANSFORM_TEX(v.texcoord,_MainTex);
@@ -64,8 +69,9 @@ Shader "Custom/Dissolve Text" {
 				fixed4 frag(v2f i) : SV_Target
 				{
 					fixed4 col = i.color;
-					fixed dissolve = round((1 - tex2D(_DissolveTexture, i.texcoord1).r) - _DissolveAmount + 0.5f);
-					col.a *= tex2D(_MainTex, i.texcoord).a * i.color.a * - dissolve;
+					_DissolveAmount = lerp(0.5, 1.6, _DissolveAmount);
+					fixed dissolve = round((1 - tex2D(_DissolveTexture, i.texcoord1).r) * _DissolveAmount);
+					col.a *= clamp(tex2D(_MainTex, i.texcoord).a * i.color.a - dissolve,0,1);
 					return col;
 				}
 				ENDCG
