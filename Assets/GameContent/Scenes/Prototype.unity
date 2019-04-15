@@ -5271,6 +5271,12 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7608827800682308829, guid: 5d4b0d445a073bb45a8a2ea5acd2b271,
+        type: 3}
+      propertyPath: sharedProfile
+      value: 
+      objectReference: {fileID: 11400000, guid: 636c6bf33d0555e4da79690505693b38,
+        type: 2}
     m_RemovedComponents:
     - {fileID: 1151150223404302332, guid: 5d4b0d445a073bb45a8a2ea5acd2b271, type: 3}
     - {fileID: 1151150221603703986, guid: 5d4b0d445a073bb45a8a2ea5acd2b271, type: 3}
