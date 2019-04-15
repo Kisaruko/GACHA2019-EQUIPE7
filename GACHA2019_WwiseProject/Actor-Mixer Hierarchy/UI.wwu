@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D5FD8550-1754-4615-BC3F-7633B39C3874}" SchemaVersion="89">
+	<AudioObjects>
+		<WorkUnit Name="UI" ID="{D5FD8550-1754-4615-BC3F-7633B39C3874}" PersistMode="Standalone">
+			<ChildrenList>
+				<RandomSequenceContainer Name="Gacha_UI_Menu_Entering_Section_RC" ID="{685316A5-903D-4DCE-923E-57F1B44B9946}" ShortID="401153778">
+					<PropertyList>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>2</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{2459E9EE-B731-4FDB-9887-C185CBEA7F6D}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="100"/>
+											<Property Name="Min" Type="Real64" Value="-100"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{A60C48EE-79FE-4602-A7A1-D98F3D59AA35}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Gacha_UI_Menu_Entering_Option_SFX_01" ID="{69071712-0DF7-49C5-B8A0-63BEF30D3B61}" ShortID="217839373">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Gacha_UI_Menu_Entering_Option_SFX_01" ID="{9E74BA3B-F477-4472-9066-04900C508629}" ShortID="267741288">
+									<Language>SFX</Language>
+									<AudioFile>Gacha_UI_Menu_Entering_Option_SFX_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Gacha_UI_Menu_Entering_Option_SFX_01" ID="{9E74BA3B-F477-4472-9066-04900C508629}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Gacha_UI_Menu_Entering_Option_SFX_02" ID="{BB721109-0F38-4C0D-A1AD-C89BAE78BA28}" ShortID="791316007">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Gacha_UI_Menu_Entering_Option_SFX_02" ID="{2ACAF009-925F-4F62-BA9E-6B1C51798699}" ShortID="282996542">
+									<Language>SFX</Language>
+									<AudioFile>Gacha_UI_Menu_Entering_Option_SFX_02.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Gacha_UI_Menu_Entering_Option_SFX_02" ID="{2ACAF009-925F-4F62-BA9E-6B1C51798699}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Gacha_UI_Menu_Entering_Option_SFX_03" ID="{41FFFD2B-4E0B-480D-97FE-8B188770FA15}" ShortID="976478510">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Gacha_UI_Menu_Entering_Option_SFX_03" ID="{4D1E264F-3809-483A-86C3-FB613AB55B42}" ShortID="682427907">
+									<Language>SFX</Language>
+									<AudioFile>Gacha_UI_Menu_Entering_Option_SFX_03.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Gacha_UI_Menu_Entering_Option_SFX_03" ID="{4D1E264F-3809-483A-86C3-FB613AB55B42}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Gacha_UI_Menu_Entering_Option_SFX_04" ID="{9DF94E12-AC3A-4E3C-8DED-A589BE176205}" ShortID="556755596">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Gacha_UI_Menu_Entering_Option_SFX_04" ID="{DCC155DF-059D-4B9C-BB48-853B6CBD202B}" ShortID="367073282">
+									<Language>SFX</Language>
+									<AudioFile>Gacha_UI_Menu_Entering_Option_SFX_04.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Gacha_UI_Menu_Entering_Option_SFX_04" ID="{DCC155DF-059D-4B9C-BB48-853B6CBD202B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Gacha_UI_Menu_Entering_Option_SFX_05" ID="{F08BC042-2BE1-4A73-A8D8-477CD6CA0C4D}" ShortID="790686483">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Gacha_UI_Menu_Entering_Option_SFX_05" ID="{E52EB257-79B0-4D02-B487-F83D5753E754}" ShortID="6166331">
+									<Language>SFX</Language>
+									<AudioFile>Gacha_UI_Menu_Entering_Option_SFX_05.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Gacha_UI_Menu_Entering_Option_SFX_05" ID="{E52EB257-79B0-4D02-B487-F83D5753E754}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Gacha_UI_Menu_Getting_Out_RC" ID="{E019ABF6-65E4-4EB0-B352-B61F8F84F7C7}" ShortID="836934855">
+					<PropertyList>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>2</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{3BF98BBC-54FB-4EDE-952D-1AF10B9E38B8}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="100"/>
+											<Property Name="Min" Type="Real64" Value="-100"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Gacha_UI_Menu_Sortie_SFX_01" ID="{072A26C5-E8C7-4CF3-9C88-94636F91A024}" ShortID="832270415">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Gacha_UI_Menu_Sortie_SFX_01" ID="{F43BC2BC-703C-4A5A-B9CE-0213D5DFE7EB}" ShortID="77473301">
+									<Language>SFX</Language>
+									<AudioFile>Gacha_UI_Menu_Sortie_SFX_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Gacha_UI_Menu_Sortie_SFX_01" ID="{F43BC2BC-703C-4A5A-B9CE-0213D5DFE7EB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Gacha_UI_Menu_Sortie_SFX_02" ID="{28A93A23-C514-4C48-9B12-8A4B6D5B46B0}" ShortID="72075311">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Gacha_UI_Menu_Sortie_SFX_02" ID="{03F494BD-9726-4385-89DC-29E611DEF011}" ShortID="961501280">
+									<Language>SFX</Language>
+									<AudioFile>Gacha_UI_Menu_Sortie_SFX_02.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Gacha_UI_Menu_Sortie_SFX_02" ID="{03F494BD-9726-4385-89DC-29E611DEF011}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Gacha_UI_Menu_Sortie_SFX_03" ID="{429F9E11-E1AD-4C45-8A2C-95B71E999138}" ShortID="1045627266">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Gacha_UI_Menu_Sortie_SFX_03" ID="{1EE72C5E-2B41-4BEC-AF78-CFE2CB5FC2B6}" ShortID="124351511">
+									<Language>SFX</Language>
+									<AudioFile>Gacha_UI_Menu_Sortie_SFX_03.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Gacha_UI_Menu_Sortie_SFX_03" ID="{1EE72C5E-2B41-4BEC-AF78-CFE2CB5FC2B6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Gacha_UI_Menu_Sortie_SFX_04" ID="{82941A52-5DE4-4D20-B33B-1897F9351619}" ShortID="590394390">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Gacha_UI_Menu_Sortie_SFX_04" ID="{EAF76210-1B45-4956-99DD-EF4AB9EBE0DC}" ShortID="745453857">
+									<Language>SFX</Language>
+									<AudioFile>Gacha_UI_Menu_Sortie_SFX_04.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Gacha_UI_Menu_Sortie_SFX_04" ID="{EAF76210-1B45-4956-99DD-EF4AB9EBE0DC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<Sound Name="Gacha_UI_Menu_Openmenu_SFX" ID="{A6334894-46C5-45E2-A095-3556E029DC6E}" ShortID="280772710">
+					<PropertyList>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-5</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Gachai_UI_Menu_Openmenu_SFX" ID="{54455BC7-F8F9-4A84-8622-580B9DCB40CD}" ShortID="450917229">
+							<Language>SFX</Language>
+							<AudioFile>Gachai_UI_Menu_Openmenu_SFX.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Gachai_UI_Menu_Openmenu_SFX" ID="{54455BC7-F8F9-4A84-8622-580B9DCB40CD}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Gacha_UI_Menu_Closingmenu_SFX" ID="{F9F47B03-6F2A-4572-B528-D7E5EB410A60}" ShortID="449277426">
+					<PropertyList>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-8</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Gacha_UI_Menu_Closingmenu_SFX" ID="{FB89D516-505D-4370-A115-5AB2D1131210}" ShortID="705117160">
+							<Language>SFX</Language>
+							<AudioFile>Gacha_UI_Menu_Closingmenu_SFX.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Gacha_UI_Menu_Closingmenu_SFX" ID="{FB89D516-505D-4370-A115-5AB2D1131210}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

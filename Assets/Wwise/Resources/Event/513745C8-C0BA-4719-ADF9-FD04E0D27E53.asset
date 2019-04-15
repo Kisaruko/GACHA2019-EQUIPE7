@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 421f913e89b57dd478d88625420055af, type: 3}
+  m_Name: 513745C8-C0BA-4719-ADF9-FD04E0D27E53
+  m_EditorClassIdentifier: 
+  objectName: Gacha_Amb_city_exterieure_LP
+  id: 2701662840
+  guid: 513745C8-C0BA-4719-ADF9-FD04E0D27E53
