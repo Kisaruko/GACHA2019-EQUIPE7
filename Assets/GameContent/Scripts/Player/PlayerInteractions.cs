@@ -72,10 +72,15 @@ public class PlayerInteractions : MonoBehaviour
                 hit.rigidbody.useGravity = false;
                 hit.rigidbody.isKinematic = true;
                 hit.rigidbody.constraints = RigidbodyConstraints.FreezeRotation;
+
             }
             if (Input.GetMouseButtonDown(0) && hit.transform.gameObject.CompareTag("Interact"))
             {
                 hit.transform.GetComponent<Trigger>().ActiveInteract();
+            }
+            else if (hit.transform.gameObject.CompareTag("Read"))
+            {
+                hit.transform.GetComponent<PostIt>().ShowNote();
             }
         }
         else
@@ -93,6 +98,11 @@ public class PlayerInteractions : MonoBehaviour
                     _rigidbody.useGravity = true;
                     _rigidbody.constraints = RigidbodyConstraints.None;
                     _rigidbody.isKinematic = false;
+                    if(Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, Mathf.Infinity))
+                    {
+                        _rigidbody.transform.position = hit.point;
+
+                    }
                 }
                 Camera.main.transform.GetChild(0).transform.SetParent(null);
 
