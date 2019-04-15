@@ -13,6 +13,7 @@ public class ClockTimer : MonoBehaviour
     [SerializeField] private float _tickDuration = 1;
 
     [SerializeField] private UnityEvent _onTimerEnd = null;
+    private DissolveControler[] _dissolveMaterials;
 
 
     #endregion
@@ -39,6 +40,11 @@ public class ClockTimer : MonoBehaviour
 
     #region Lifecycle
 
+    private void Awake()
+    {
+        _dissolveMaterials = FindObjectsOfType<DissolveControler>();
+    }
+
     private void Start()
     {
         StartCoroutine("Timer");
@@ -64,6 +70,12 @@ public class ClockTimer : MonoBehaviour
             {
                 AkSoundEngine.PostEvent("Gacha_Amb_Object_Pendulum_Last_10_seconds_OS", gameObject);
             }
+
+            if(_dissolveMaterials.Length > 0)
+            {
+                SetDissolveAmount(i);
+            }
+
             yield return new WaitForSeconds(_tickDuration);
         }
 
@@ -83,12 +95,37 @@ public class ClockTimer : MonoBehaviour
         _hand.localEulerAngles = Vector3.forward * newRoll;
     }
 
+    
+    private void SetDissolveAmount(int timeRemain)
+    {
+        float t = (float)timeRemain / (float)_duration;
+        float amount = Mathf.Lerp(1, 0, t);
+
+        for (int i = 0; i < _dissolveMaterials.Length; i++)
+        {
+            if (_dissolveMaterials[i].general)
+            {
+                _dissolveMaterials[i].SetDissolveAmount(amount);
+            }
+        }
+    }
+
+
 
     private void EndTimer()
     {
+
+        for (int i = 0; i < _dissolveMaterials.Length; i++)
+        {
+            if (_dissolveMaterials[i].general)
+            {
+                _dissolveMaterials[i].SetDissolveAmount(1);
+            }
+        }
+
         AkSoundEngine.PostEvent("Gacha_Amb_Objects_Pendulum_Death_OS", gameObject);
     
-    _onTimerEnd?.Invoke();
+        _onTimerEnd?.Invoke();
     }
 
     #endregion
