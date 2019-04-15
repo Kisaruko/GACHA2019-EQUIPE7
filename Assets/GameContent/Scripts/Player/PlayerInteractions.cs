@@ -43,7 +43,7 @@ public class PlayerInteractions : MonoBehaviour
 
     void Update()
     {
-        
+        if (UIManager.Instance.isPaused) return;
         RaycastHit hit;
         if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, distMaxDrop, LayerMask.GetMask("Interactive")))
         {
@@ -70,6 +70,7 @@ public class PlayerInteractions : MonoBehaviour
             {
                 hit.transform.SetParent(Camera.main.transform);
                 hit.rigidbody.useGravity = false;
+                hit.rigidbody.isKinematic = true;
                 hit.rigidbody.constraints = RigidbodyConstraints.FreezeRotation;
             }
             if (Input.GetMouseButtonDown(0) && hit.transform.gameObject.CompareTag("Interact"))
@@ -91,6 +92,7 @@ public class PlayerInteractions : MonoBehaviour
                 {
                     _rigidbody.useGravity = true;
                     _rigidbody.constraints = RigidbodyConstraints.None;
+                    _rigidbody.isKinematic = false;
                 }
                 Camera.main.transform.GetChild(0).transform.SetParent(null);
 
