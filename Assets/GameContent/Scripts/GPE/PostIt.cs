@@ -6,14 +6,14 @@ public class PostIt : MonoBehaviour
 {
     [SerializeField, TextArea] private string _note = "";
     [SerializeField] private TextMesh _text = null;
-    [SerializeField] private float _fadeDuration;
+    [SerializeField] private float _fadeDuration = 0.5f;
     private Color _currentColor;
-    private float _alpha;
+    [SerializeField] private float _alpha = 0;
 
     private void Start()
     {
         _text.text = _note;
-        _currentColor = _text.color;
+        _currentColor = new Color(_currentColor.r, _currentColor.g, _currentColor.b, _alpha);
     }
 
 
