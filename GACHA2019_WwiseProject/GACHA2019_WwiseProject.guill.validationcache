@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="89">
-	<ValidationCacheItem File="D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\Actor-Mixer Hierarchy\Ambiances.wwu" DateLow="1555259429" DateHigh="0"/>
-	<ValidationCacheItem File="D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\Actor-Mixer Hierarchy\Character.wwu" DateLow="1555259429" DateHigh="0"/>
+	<ValidationCacheItem File="D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\Actor-Mixer Hierarchy\Ambiances.wwu" DateLow="1555322613" DateHigh="0"/>
+	<ValidationCacheItem File="D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\Actor-Mixer Hierarchy\Character.wwu" DateLow="1555283203" DateHigh="0"/>
 	<ValidationCacheItem File="D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1555246580" DateHigh="0"/>
-	<ValidationCacheItem File="D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\Actor-Mixer Hierarchy\SFX.wwu" DateLow="1555262971" DateHigh="0"/>
-	<ValidationCacheItem File="D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\Actor-Mixer Hierarchy\UI.wwu" DateLow="1555247599" DateHigh="0"/>
-	<ValidationCacheItem File="D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1555246580" DateHigh="0"/>
+	<ValidationCacheItem File="D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\Actor-Mixer Hierarchy\SFX.wwu" DateLow="1555287655" DateHigh="0"/>
+	<ValidationCacheItem File="D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\Actor-Mixer Hierarchy\UI.wwu" DateLow="1555283297" DateHigh="0"/>
+	<ValidationCacheItem File="D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1555282329" DateHigh="0"/>
 	<ValidationCacheItem File="D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1555246580" DateHigh="0"/>
 	<ValidationCacheItem File="D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1555246780" DateHigh="0"/>
 	<ValidationCacheItem File="D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="1555246580" DateHigh="0"/>
@@ -13,10 +13,10 @@
 	<ValidationCacheItem File="D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1555246580" DateHigh="0"/>
 	<ValidationCacheItem File="D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1555246580" DateHigh="0"/>
 	<ValidationCacheItem File="D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\Effects\Factory Effects.wwu" DateLow="1555246580" DateHigh="0"/>
-	<ValidationCacheItem File="D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\Events\Default Work Unit.wwu" DateLow="1555258529" DateHigh="0"/>
-	<ValidationCacheItem File="D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\Events\Gacha2019.wwu" DateLow="1555259801" DateHigh="0"/>
-	<ValidationCacheItem File="D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\GACHA2019_WwiseProject.guill.wsettings" DateLow="1555281578" DateHigh="0"/>
-	<ValidationCacheItem File="D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\GACHA2019_WwiseProject.wproj" DateLow="1555246580" DateHigh="0"/>
+	<ValidationCacheItem File="D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\Events\Default Work Unit.wwu" DateLow="1555282681" DateHigh="0"/>
+	<ValidationCacheItem File="D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\Events\Gacha2019.wwu" DateLow="1555322613" DateHigh="0"/>
+	<ValidationCacheItem File="D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\GACHA2019_WwiseProject.guill.wsettings" DateLow="1555323503" DateHigh="0"/>
+	<ValidationCacheItem File="D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\GACHA2019_WwiseProject.wproj" DateLow="1555320947" DateHigh="0"/>
 	<ValidationCacheItem File="D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1555246580" DateHigh="0"/>
 	<ValidationCacheItem File="D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1555246580" DateHigh="0"/>
 	<ValidationCacheItem File="D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1555246580" DateHigh="0"/>
@@ -26,8 +26,8 @@
 	<ValidationCacheItem File="D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1555246580" DateHigh="0"/>
 	<ValidationCacheItem File="D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\Queries\Factory Queries.wwu" DateLow="1555246580" DateHigh="0"/>
 	<ValidationCacheItem File="D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1555246580" DateHigh="0"/>
-	<ValidationCacheItem File="D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\SoundBanks\Gacha2019.wwu" DateLow="1555247128" DateHigh="0"/>
-	<ValidationCacheItem File="D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1555258529" DateHigh="0"/>
+	<ValidationCacheItem File="D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\SoundBanks\Gacha2019.wwu" DateLow="1555322802" DateHigh="0"/>
+	<ValidationCacheItem File="D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1555321785" DateHigh="0"/>
 	<ValidationCacheItem File="D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\States\Default Work Unit.wwu" DateLow="1555246580" DateHigh="0"/>
 	<ValidationCacheItem File="D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1555246895" DateHigh="0"/>
 	<ValidationCacheItem File="D:\data\cours acfa 2018 sds3\projets\PROJETS EN COURS\GACHA2019-EQUIPE7\GACHA2019_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1555246580" DateHigh="0"/>
