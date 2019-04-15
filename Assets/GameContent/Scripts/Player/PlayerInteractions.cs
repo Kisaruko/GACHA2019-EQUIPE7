@@ -43,6 +43,7 @@ public class PlayerInteractions : MonoBehaviour
 
     void Update()
     {
+        
         RaycastHit hit;
         if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, distMaxDrop, LayerMask.GetMask("Interactive")))
         {
