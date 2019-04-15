@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{77135A00-2559-45FA-BCFA-CB2B30857223}" SchemaVersion="89">
+	<AudioObjects>
+		<WorkUnit Name="SFX" ID="{77135A00-2559-45FA-BCFA-CB2B30857223}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Pickups" ID="{A2158D8F-4C07-4032-BC3C-8452B85B9920}" ShortID="1063471343">
+					<ChildrenList>
+						<Sound Name="Gacha_FX_Pickup_Pills_OS" ID="{1012FADF-2AAE-4847-9892-EFD5F0B404A1}" ShortID="204372478">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Gacha_FX_Pickup_Pills_OS" ID="{38585955-ABF1-4640-8C62-1CB53FAD9EFD}" ShortID="641240092">
+									<Language>SFX</Language>
+									<AudioFile>Gacha_FX_Pickup_Pills_OS.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Gacha_FX_Pickup_Pills_OS" ID="{38585955-ABF1-4640-8C62-1CB53FAD9EFD}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Gacha_FX_Pickup_Keys_Held_OS" ID="{A09E20E9-DD1E-486B-9658-1BAFAF57F65F}" ShortID="30442197">
+							<PropertyList>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Gacha_FX_Pickup_Keys_Held_OS" ID="{5EC34203-895F-49E5-9325-CA1E6B6D7740}" ShortID="75796758">
+									<Language>SFX</Language>
+									<AudioFile>Gacha_FX_Pickup_Keys_Held_OS.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Gacha_FX_Pickup_Keys_Held_OS" ID="{5EC34203-895F-49E5-9325-CA1E6B6D7740}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Sound Name="Gacha_FX_Pickup_Padlock_OS" ID="{A71A0AC3-EF01-43A6-A2D0-25E608FE17CD}" ShortID="171691680">
+					<PropertyList>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>3</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Gacha_FX_Pickup_Padlock_OS" ID="{4EAFB170-669A-4E97-B0A0-68CA53F2CA84}" ShortID="450404604">
+							<Language>SFX</Language>
+							<AudioFile>Gacha_FX_Pickup_Padlock_OS.wav</AudioFile>
+							<ConvertedFileIDList>
+								<File ID="753859578"/>
+							</ConvertedFileIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Gacha_FX_Pickup_Padlock_OS" ID="{4EAFB170-669A-4E97-B0A0-68CA53F2CA84}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Gacha_FX_Pickup_Padlock_Rolling_OS" ID="{C5C70DC6-AC71-439F-9D15-2E2DA37857EC}" ShortID="402126412">
+					<PropertyList>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{247D7569-ABED-459A-9ECF-D41CA61BC323}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="50"/>
+											<Property Name="Min" Type="Real64" Value="-100"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-1</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{7DB6F12C-C361-403A-B353-09E0DF50451C}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="1"/>
+											<Property Name="Min" Type="Real64" Value="-1"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Gacha_FX_Pickup_Padlock_Rolling_OS" ID="{1FFA2ACE-0899-4C45-AA88-AC10F7B90972}" ShortID="507987857">
+							<Language>SFX</Language>
+							<AudioFile>Gacha_FX_Pickup_Padlock_Rolling_OS.wav</AudioFile>
+							<ConvertedFileIDList>
+								<File ID="258170629"/>
+							</ConvertedFileIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Gacha_FX_Pickup_Padlock_Rolling_OS" ID="{1FFA2ACE-0899-4C45-AA88-AC10F7B90972}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Folder Name="Enigmes" ID="{2006C48C-99F0-4C87-A0B6-F7300F9F7C1C}" ShortID="797094140">
+					<ChildrenList>
+						<Sound Name="Gacha_Enigme_Babycry_LP" ID="{923FD9C8-8FDF-401F-90EF-3026048F0FC8}" ShortID="729643216">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-9</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Gacha_Enigme_Babycry_LP" ID="{8902BDA4-5BC0-4CCD-B2A9-0CC914050ED4}" ShortID="8968465">
+									<Language>SFX</Language>
+									<AudioFile>Gacha_Enigme_Babycry_LP.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Gacha_Enigme_Babycry_LP" ID="{8902BDA4-5BC0-4CCD-B2A9-0CC914050ED4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Gacha_Enigme_Revelation_Tableau_OS_TP" ID="{4E96544E-3D9F-418A-8134-684E54B2C10A}" ShortID="177116244">
+							<PropertyList>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Gacha_Enigme_Revelation_Tableau_OS_TP" ID="{086BA365-5629-446D-9214-BB93328D7623}" ShortID="951027946">
+									<Language>SFX</Language>
+									<AudioFile>Gacha_Enigme_Revelation_Tableau_OS_TP.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Gacha_Enigme_Revelation_Tableau_OS_TP" ID="{086BA365-5629-446D-9214-BB93328D7623}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

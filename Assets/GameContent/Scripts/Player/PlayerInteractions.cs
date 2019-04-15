@@ -43,6 +43,7 @@ public class PlayerInteractions : MonoBehaviour
 
     void Update()
     {
+        
         RaycastHit hit;
         if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, distMaxDrop, LayerMask.GetMask("Interactive")))
         {
@@ -68,8 +69,8 @@ public class PlayerInteractions : MonoBehaviour
             if (Input.GetMouseButtonDown(0) && hit.transform.gameObject.CompareTag("Drop"))
             {
                 hit.transform.SetParent(Camera.main.transform);
-                hit.rigidbody.useGravity = false;
-                hit.rigidbody.constraints = RigidbodyConstraints.FreezeRotation;
+                hit.rigidbody.isKinematic = true;
+                hit.collider.enabled = false;
             }
             if (Input.GetMouseButtonDown(0) && hit.transform.gameObject.CompareTag("Interact"))
             {
@@ -86,10 +87,11 @@ public class PlayerInteractions : MonoBehaviour
             if (Camera.main.transform.childCount > 0)
             {
                 Rigidbody _rigidbody = Camera.main.transform.GetChild(0).gameObject.GetComponent<Rigidbody>();
+                Collider _col = Camera.main.transform.GetChild(0).gameObject.GetComponent<Collider>();
                 if (_rigidbody)
                 {
-                    _rigidbody.useGravity = true;
-                    _rigidbody.constraints = RigidbodyConstraints.None;
+                    _col.enabled = true;
+                    _rigidbody.isKinematic = false;
                 }
                 Camera.main.transform.GetChild(0).transform.SetParent(null);
 

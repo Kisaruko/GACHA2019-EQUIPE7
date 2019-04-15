@@ -34,3 +34,6 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+# Wwise
+/GACHA2019_WwiseProject/Originals/SFX/*.akd
+/GACHA2019_WwiseProject/.cache/
