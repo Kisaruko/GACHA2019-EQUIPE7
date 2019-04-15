@@ -9,6 +9,7 @@ public class ClockTimer : MonoBehaviour
 
     [SerializeField] private Transform _hand = null;
     [SerializeField] private int _duration = 60;
+    [SerializeField] private int _timeRemainAlert = 10;
     [SerializeField] private float _tickDuration = 1;
 
     [SerializeField] private UnityEvent _onTimerEnd = null;
@@ -51,9 +52,18 @@ public class ClockTimer : MonoBehaviour
     private IEnumerator Timer()
     {
         SetHandRoll(_duration); //Sets the hand at his original roll
-        for (int i = _duration; i >= 0; i--)
+        for (int i = _duration; i > 0; i--)
         {
             SetHandRoll(i);
+           
+            if (i>10)
+            {
+                AkSoundEngine.PostEvent("Gacha_Objects_Pendulum_Timer_Normal_LP", gameObject);
+            }
+            else if (i<=_timeRemainAlert && i > 0) 
+            {
+                AkSoundEngine.PostEvent("Gacha_Amb_Object_Pendulum_Last_10_seconds_OS", gameObject);
+            }
             yield return new WaitForSeconds(_tickDuration);
         }
 
@@ -76,7 +86,9 @@ public class ClockTimer : MonoBehaviour
 
     private void EndTimer()
     {
-       _onTimerEnd?.Invoke();
+        AkSoundEngine.PostEvent("Gacha_Amb_Objects_Pendulum_Death_OS", gameObject);
+    
+    _onTimerEnd?.Invoke();
     }
 
     #endregion

@@ -5,6 +5,11 @@
 			<ChildrenList>
 				<SwitchContainer Name="Gacha_Char_FTPS_Switchcontainer" ID="{F3A93A36-10F2-494C-B1AC-64404285D721}" ShortID="42897123">
 					<PropertyList>
+						<Property Name="Inclusion" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
 						<Property Name="MaxSoundPerInstance" Type="int16">
 							<ValueList>
 								<Value>3</Value>
@@ -36,187 +41,6 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<RandomSequenceContainer Name="Gacha_Char_FTPS_Wood" ID="{F85F17B3-6BEF-452E-93D0-9F99F5BFCCB3}" ShortID="325920058">
-							<PropertyList>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{A4906850-636B-476D-B70B-E3594A092902}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="100"/>
-													<Property Name="Min" Type="Real64" Value="-100"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
-								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
-								<Property Name="Volume" Type="Real64">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{3B851EF5-A0B4-4BA5-81D5-043C162D6CEA}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="1"/>
-													<Property Name="Min" Type="Real64" Value="-3"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="Gacha_Char_FTPS_Wood_OS_01" ID="{A94703E1-A460-4923-ADE2-7C517FDDE230}" ShortID="1005887759">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Gacha_Char_FTPS_Wood_OS_01" ID="{EE578CA5-C118-4FE3-8896-14070BB41E29}" ShortID="843479100">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="1.00167138767057E-04"/>
-												<Property Name="TrimBegin" Type="Real64" Value="1.02275920635837E-03"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Gacha_Char_FTPS_Wood_OS_01.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Gacha_Char_FTPS_Wood_OS_01" ID="{EE578CA5-C118-4FE3-8896-14070BB41E29}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Gacha_Char_FTPS_Wood_OS_02" ID="{4FEFA0D8-6EE9-4F32-953C-B3402123D69B}" ShortID="982658163">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Gacha_Char_FTPS_Wood_OS_02" ID="{90F67386-F020-42D8-8286-B5D93A4D1373}" ShortID="62694900">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="1.02032696759259E-04"/>
-												<Property Name="TrimBegin" Type="Real64" Value="2.62599940606725E-03"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Gacha_Char_FTPS_Wood_OS_02.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Gacha_Char_FTPS_Wood_OS_02" ID="{90F67386-F020-42D8-8286-B5D93A4D1373}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Gacha_Char_FTPS_Wood_OS_03" ID="{87E76EA6-93BB-4353-8B48-261973EB94A1}" ShortID="761541778">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Gacha_Char_FTPS_Wood_OS_03" ID="{66C54356-CCD6-46BD-A77D-DF1F717DEA29}" ShortID="41147683">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="4.18975069252078E-04"/>
-												<Property Name="TrimBegin" Type="Real64" Value="8.19329024315173E-04"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Gacha_Char_FTPS_Wood_OS_03.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Gacha_Char_FTPS_Wood_OS_03" ID="{66C54356-CCD6-46BD-A77D-DF1F717DEA29}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Gacha_Char_FTPS_Wood_OS_04" ID="{06F4CFEF-028F-4F66-8741-582313799ABE}" ShortID="331834908">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Gacha_Char_FTPS_Wood_OS_04" ID="{26DF1915-1894-4460-ABB1-CFF77E339BB8}" ShortID="225918998">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="2.2359644313635E-04"/>
-												<Property Name="TrimBegin" Type="Real64" Value="1.44592366561506E-03"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Gacha_Char_FTPS_Wood_OS_04.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Gacha_Char_FTPS_Wood_OS_04" ID="{26DF1915-1894-4460-ABB1-CFF77E339BB8}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Gacha_Char_FTPS_Wood_OS_05" ID="{C9A9E2E6-ED16-40BE-9D85-BFAB9327BC87}" ShortID="50120308">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Gacha_Char_FTPS_Wood_OS_05" ID="{A92AA5EF-0975-4D9C-BC71-00BAF79721B1}" ShortID="45124566">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="1.83389435331063E-04"/>
-												<Property Name="TrimBegin" Type="Real64" Value="9.7337469521872E-04"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Gacha_Char_FTPS_Wood_OS_05.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Gacha_Char_FTPS_Wood_OS_05" ID="{A92AA5EF-0975-4D9C-BC71-00BAF79721B1}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Gacha_Char_FTPS_Wood_OS_06" ID="{B41ABC17-3274-4192-813F-D80DC0A4C898}" ShortID="77858856">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Gacha_Char_FTPS_Wood_OS_06" ID="{7F1328B4-F241-4FBB-A3F3-2FDF5901C76D}" ShortID="702382559">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="2.21748042867357E-04"/>
-												<Property Name="TrimBegin" Type="Real64" Value="5.08716098342759E-04"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Gacha_Char_FTPS_Wood_OS_06.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Gacha_Char_FTPS_Wood_OS_06" ID="{7F1328B4-F241-4FBB-A3F3-2FDF5901C76D}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Gacha_Char_FTPS_Carpet" ID="{E0622876-5B76-46F5-81C8-82B1DE333D50}" ShortID="54467685">
 							<PropertyList>
 								<Property Name="Pitch" Type="int32">
@@ -361,9 +185,6 @@
 							<GroupingBehavior>
 								<ItemRef Name="Gacha_Char_FTPS_Carpet" ID="{E0622876-5B76-46F5-81C8-82B1DE333D50}"/>
 							</GroupingBehavior>
-							<GroupingBehavior>
-								<ItemRef Name="Gacha_Char_FTPS_Wood" ID="{F85F17B3-6BEF-452E-93D0-9F99F5BFCCB3}"/>
-							</GroupingBehavior>
 						</GroupingBehaviorList>
 						<GroupingList>
 							<Grouping>
@@ -372,15 +193,190 @@
 									<ItemRef Name="Gacha_Char_FTPS_Carpet" ID="{E0622876-5B76-46F5-81C8-82B1DE333D50}"/>
 								</ItemList>
 							</Grouping>
-							<Grouping>
-								<SwitchRef Name="Wood" ID="{E10BE426-A23B-4A07-A25A-398D7E3D1B52}"/>
-								<ItemList>
-									<ItemRef Name="Gacha_Char_FTPS_Wood" ID="{F85F17B3-6BEF-452E-93D0-9F99F5BFCCB3}"/>
-								</ItemList>
-							</Grouping>
 						</GroupingList>
 					</GroupingInfo>
 				</SwitchContainer>
+				<RandomSequenceContainer Name="Gacha_Char_FTPS_Wood" ID="{F85F17B3-6BEF-452E-93D0-9F99F5BFCCB3}" ShortID="325920058">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{A4906850-636B-476D-B70B-E3594A092902}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="100"/>
+											<Property Name="Min" Type="Real64" Value="-100"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+						<Property Name="Volume" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{3B851EF5-A0B4-4BA5-81D5-043C162D6CEA}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="1"/>
+											<Property Name="Min" Type="Real64" Value="-3"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Gacha_Char_FTPS_Wood_OS_01" ID="{A94703E1-A460-4923-ADE2-7C517FDDE230}" ShortID="1005887759">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Gacha_Char_FTPS_Wood_OS_01" ID="{EE578CA5-C118-4FE3-8896-14070BB41E29}" ShortID="843479100">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="1.00167138767057E-04"/>
+										<Property Name="TrimBegin" Type="Real64" Value="1.02275920635837E-03"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Gacha_Char_FTPS_Wood_OS_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Gacha_Char_FTPS_Wood_OS_01" ID="{EE578CA5-C118-4FE3-8896-14070BB41E29}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Gacha_Char_FTPS_Wood_OS_02" ID="{4FEFA0D8-6EE9-4F32-953C-B3402123D69B}" ShortID="982658163">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Gacha_Char_FTPS_Wood_OS_02" ID="{90F67386-F020-42D8-8286-B5D93A4D1373}" ShortID="62694900">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="1.02032696759259E-04"/>
+										<Property Name="TrimBegin" Type="Real64" Value="2.62599940606725E-03"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Gacha_Char_FTPS_Wood_OS_02.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Gacha_Char_FTPS_Wood_OS_02" ID="{90F67386-F020-42D8-8286-B5D93A4D1373}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Gacha_Char_FTPS_Wood_OS_03" ID="{87E76EA6-93BB-4353-8B48-261973EB94A1}" ShortID="761541778">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Gacha_Char_FTPS_Wood_OS_03" ID="{66C54356-CCD6-46BD-A77D-DF1F717DEA29}" ShortID="41147683">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="4.18975069252078E-04"/>
+										<Property Name="TrimBegin" Type="Real64" Value="8.19329024315173E-04"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Gacha_Char_FTPS_Wood_OS_03.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Gacha_Char_FTPS_Wood_OS_03" ID="{66C54356-CCD6-46BD-A77D-DF1F717DEA29}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Gacha_Char_FTPS_Wood_OS_04" ID="{06F4CFEF-028F-4F66-8741-582313799ABE}" ShortID="331834908">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Gacha_Char_FTPS_Wood_OS_04" ID="{26DF1915-1894-4460-ABB1-CFF77E339BB8}" ShortID="225918998">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="2.2359644313635E-04"/>
+										<Property Name="TrimBegin" Type="Real64" Value="1.44592366561506E-03"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Gacha_Char_FTPS_Wood_OS_04.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Gacha_Char_FTPS_Wood_OS_04" ID="{26DF1915-1894-4460-ABB1-CFF77E339BB8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Gacha_Char_FTPS_Wood_OS_05" ID="{C9A9E2E6-ED16-40BE-9D85-BFAB9327BC87}" ShortID="50120308">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Gacha_Char_FTPS_Wood_OS_05" ID="{A92AA5EF-0975-4D9C-BC71-00BAF79721B1}" ShortID="45124566">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="1.83389435331063E-04"/>
+										<Property Name="TrimBegin" Type="Real64" Value="9.7337469521872E-04"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Gacha_Char_FTPS_Wood_OS_05.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Gacha_Char_FTPS_Wood_OS_05" ID="{A92AA5EF-0975-4D9C-BC71-00BAF79721B1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Gacha_Char_FTPS_Wood_OS_06" ID="{B41ABC17-3274-4192-813F-D80DC0A4C898}" ShortID="77858856">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6F2A368-F26E-4E66-9462-65D6D1FE6271}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9B1B7AC0-441A-4F12-AB51-1CD8B7ECDC5B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Gacha_Char_FTPS_Wood_OS_06" ID="{7F1328B4-F241-4FBB-A3F3-2FDF5901C76D}" ShortID="702382559">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="2.21748042867357E-04"/>
+										<Property Name="TrimBegin" Type="Real64" Value="5.08716098342759E-04"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Gacha_Char_FTPS_Wood_OS_06.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Gacha_Char_FTPS_Wood_OS_06" ID="{7F1328B4-F241-4FBB-A3F3-2FDF5901C76D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
