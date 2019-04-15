@@ -11324,6 +11324,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mode: 0
+  colorBlind: {fileID: 4800000, guid: 6348c3fa33b2f13419e663846e319eef, type: 3}
   showDifference: 0
 --- !u!1001 &1151150222471219403
 PrefabInstance:
