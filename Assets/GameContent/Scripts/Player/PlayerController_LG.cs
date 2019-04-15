@@ -213,6 +213,8 @@ public class PlayerController_LG : MonoBehaviour
         Cursor.visible = false;
 
         if (UIManager.Instance) UIManager.Instance.OnPause += (bool _doPause) => canLook = !_doPause;
+
+        camera.transform.rotation = Quaternion.identity;
     }
 
     // Update is called once per frame

@@ -15,6 +15,7 @@ public class PlayerInteractions : MonoBehaviour
             canRotateObject = value;
             controller.canLook = !value;
             controller.canMove = !value;
+            if (value && controller.isMoving) controller.IsMoving = false;
 
             Cursor.lockState = (value == true) ? CursorLockMode.Confined : CursorLockMode.Locked;
         }
