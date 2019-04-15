@@ -272,7 +272,7 @@ MonoBehaviour:
   timerHighlight: 0
   maxtimer: 0.75
   canRotateObject: 0
-  speedRotateObj: 0.1
+  speedRotateObj: 1
   distMaxDrop: 3
 --- !u!54 &9112741578141056861
 Rigidbody:
