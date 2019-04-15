@@ -5,6 +5,8 @@ public class AllManager : MonoBehaviour
     public static AllManager Instance;
     public bool[] Matriochka = new bool[7];
 
+    public int colorBlindEnumIndex;
+
     // Start is called before the first frame update
     private void Awake()
     {
