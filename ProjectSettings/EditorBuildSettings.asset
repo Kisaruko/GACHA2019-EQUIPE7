@@ -11,10 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/GameContent/Scenes/Prototype.unity
     guid: 87eccbd4ccf6f6947be052ee1a1d8dae
-  - enabled: 0
-    path: Assets/GameContent/Scenes/Level_Base.unity
-    guid: 3c659b7cec53f4c40a1bf7d0f3996be8
   - enabled: 1
     path: Assets/GameContent/Scenes/Game Levels/Level2.unity
     guid: 5059489171f12744b8fcd47c549770f1
+  - enabled: 1
+    path: Assets/GameContent/Scenes/Game Levels/End Game.unity
+    guid: 33395b018e15cc241bd06613d8874038
   m_configObjects: {}
