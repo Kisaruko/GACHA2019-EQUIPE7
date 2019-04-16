@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/GameContent/Scenes/Prototype.unity
     guid: 87eccbd4ccf6f6947be052ee1a1d8dae
   - enabled: 1
+    path: Assets/GameContent/Scenes/Game Levels/LevelIntermediaire.unity
+    guid: 66682fbd2414f3f45bc60aae43e896b2
+  - enabled: 1
     path: Assets/GameContent/Scenes/Game Levels/Level2.unity
     guid: 5059489171f12744b8fcd47c549770f1
   - enabled: 1
